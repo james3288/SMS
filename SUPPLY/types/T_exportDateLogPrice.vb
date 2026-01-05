@@ -1,0 +1,31 @@
+﻿Public Class T_exportDateLogPrice
+    Public Property rsNo As String
+    Public Property drNo As String
+    Public Property wsNo_RrNo As String
+    Public Property requestDate As DateTime
+    Public Property dateNeeded As DateTime
+    Public Property joNo As String
+    Public Property itemDesc As String
+    Public Property constItem As String
+    Public Property constItemDesc As String
+    Public Property qtyTakeOffDesc As String
+    Public Property rsQty As Double
+    Public Property poCvWsQtyReleased As Double
+    Public Property rrWsQtyReceived As Double
+    Public Property drQty As Double
+    Public Property price As Double
+    Public Property unit As String
+    Public Property typeOfRequest As String
+    Public Property inOut As String
+    Public Property poCvStatus As String
+    Public Property rrStatus As String
+    Public Property wsStatus As String
+    Public Property chargeTo As String
+    Public Property location As String
+    Public Property dateLog As DateTime
+    Public Property typeOfCharges As String
+    Public Property typeOfPurchasing As String
+    Public Property requestedBy As String
+    Public Property warehouseQyArea As String
+    Public Property username As String
+End Class

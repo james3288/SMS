@@ -1,0 +1,3480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C2B9E3CE-CA5B-4B10-9C60-1671F63C48CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SUPPLY.FMain</StartupObject>
+    <RootNamespace>SUPPLY</RootNamespace>
+    <AssemblyName>SUPPLY</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>icon_reach_editorial.png.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SUPPLY.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SUPPLY.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>SUPPLY.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>SUPPLY.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>SUPPLY.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>SUPPLY.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EPPlus, Version=6.2.7.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.6.2.7\lib\net35\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.1.1.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.Interfaces.6.1.1\lib\net35\EPPlus.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.1.1.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.System.Drawing.6.1.1\lib\net35\EPPlus.System.Drawing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="class_combobox_placeholder.vb" />
+    <Compile Include="Class_Copy.vb" />
+    <Compile Include="class_items.vb" />
+    <Compile Include="class_placeholder.vb" />
+    <Compile Include="class_placeholder3.vb" />
+    <Compile Include="class_placeholder4.vb" />
+    <Compile Include="class_placeholder5.vb" />
+    <Compile Include="class_query.vb" />
+    <Compile Include="class_requestor.vb" />
+    <Compile Include="Class_Row_Total.vb" />
+    <Compile Include="Class_Try.vb" />
+    <Compile Include="Components\customMessageBox.vb" />
+    <Compile Include="crWithdrawalReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crWithdrawalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomizedFields.vb" />
+    <Compile Include="DevExpress\Spreadsheet.vb" />
+    <Compile Include="enums\GlobalEnums.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRequisition_Slip_Input.Designer.vb">
+      <DependentUpon>FRequisition_Slip_Input.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRequisition_Slip_Input.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWithdrawalReport.Designer.vb">
+      <DependentUpon>frmWithdrawalReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWithdrawalReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="function_charges.vb" />
+    <Compile Include="interfaces\Interfaces.vb" />
+    <Compile Include="lib\BackgroundWorkerChecker.vb" />
+    <Compile Include="lib\ColumnSettingsLib.vb" />
+    <Compile Include="lib\ColumnValues.vb" />
+    <Compile Include="lib\ColumnValuesObj.vb" />
+    <Compile Include="lib\CustomGridview.vb" />
+    <Compile Include="lib\CustomSaved.vb" />
+    <Compile Include="lib\Delegates.vb" />
+    <Compile Include="lib\DynamicFn.vb" />
+    <Compile Include="lib\DynamicQueriesFn.vb" />
+    <Compile Include="lib\GetUtilities.vb" />
+    <Compile Include="lib\ListOfDatas.vb" />
+    <Compile Include="lib\ListOfTables.vb" />
+    <Compile Include="lib\ListTabIndex.vb" />
+    <Compile Include="lib\MovablePanel.vb" />
+    <Compile Include="lib\PropsFields.vb" />
+    <Compile Include="lib\pubEnum.vb" />
+    <Compile Include="lib\QueriesFn.vb" />
+    <Compile Include="lib\Results.vb" />
+    <Compile Include="lib\SelectBuilder.vb" />
+    <Compile Include="lib\Utilities.vb" />
+    <Compile Include="lib\_init_.vb" />
+    <Compile Include="ListViewItemComparer.vb" />
+    <Compile Include="Model\AddTireSerialNoModel.vb" />
+    <Compile Include="Model\CreateChargesModel.vb" />
+    <Compile Include="Model\CreatePurchaseOrderForDrModel.vb" />
+    <Compile Include="Model\CreateReceivingModel.vb" />
+    <Compile Include="Model\CreateRsModel.vb" />
+    <Compile Include="Model\CreateWithdrawalSlipForDrModel.vb" />
+    <Compile Include="Model\DeliveryReciptModel.vb" />
+    <Compile Include="Model\FRequesitionSearchByModel.vb" />
+    <Compile Include="Model\ItemCheckedModel.vb" />
+    <Compile Include="Model\KeyPerformanceIndicatorModel.vb" />
+    <Compile Include="Model\ListOfEmployeeModel.vb" />
+    <Compile Include="Model\Model.vb" />
+    <Compile Include="Model\ModelDR.vb" />
+    <Compile Include="Model\ModelExcelToSQL.vb" />
+    <Compile Include="Model\ModelNew.vb" />
+    <Compile Include="Model\ModelOperator_Driver.vb" />
+    <Compile Include="Model\Model_Dynamic_Select.vb" />
+    <Compile Include="Model\Model_King_Dynamic_Update.vb" />
+    <Compile Include="Model\Model_ProperNames.vb" />
+    <Compile Include="Model\Model_UserInfo.vb" />
+    <Compile Include="Model\ReceivingModel.vb" />
+    <Compile Include="Model\RSDRModel.vb" />
+    <Compile Include="Model\SearchByChargesNewModel.vb" />
+    <Compile Include="Model\SearchByRequestedByModel.vb" />
+    <Compile Include="Model\StockCardModel.vb" />
+    <Compile Include="Model\WarehouseAreaModel.vb" />
+    <Compile Include="Model\WarehouseItemModel.vb" />
+    <Compile Include="Model\WithdrawalListModel.vb" />
+    <Compile Include="ModSupplyTransaction.vb" />
+    <Compile Include="Module1.vb" />
+    <Compile Include="Module_public_var.vb" />
+    <Compile Include="Mod_Borrower_functions.vb" />
+    <Compile Include="Network\FNetwork_Config.Designer.vb">
+      <DependentUpon>FNetwork_Config.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Network\FNetwork_Config.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PCM_modules.vb" />
+    <Compile Include="SAMPLEREPORT.Designer.vb">
+      <DependentUpon>SAMPLEREPORT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SAMPLEREPORT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Services\CreateDeliveryReceipt\AggregatesTransactionFlow.vb" />
+    <Compile Include="spire\xls.vb" />
+    <Compile Include="StartupModule.vb" />
+    <Compile Include="SupplyModule.vb" />
+    <Compile Include="Supply\Accident Report\FAccidentReport.Designer.vb">
+      <DependentUpon>FAccidentReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Accident Report\FAccidentReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Accident Report\FAccidentReportField.Designer.vb">
+      <DependentUpon>FAccidentReportField.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Accident Report\FAccidentReportField.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Accident Report\FAccidentReport_next_page.Designer.vb">
+      <DependentUpon>FAccidentReport_next_page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Accident Report\FAccidentReport_next_page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Accident Report\FAccidentReport_page2.Designer.vb">
+      <DependentUpon>FAccidentReport_page2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Accident Report\FAccidentReport_page2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\DataSet_Purchased_Items_Update.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Purchased_Items_Update.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\DataSet_Purchased_Items_Update.vb">
+      <DependentUpon>DataSet_Purchased_Items_Update.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\frmAccountTitle.designer.vb">
+      <DependentUpon>frmAccountTitle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\frmAccountTitle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\frmCharges.designer.vb">
+      <DependentUpon>frmCharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\frmCharges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\frmClassification.designer.vb">
+      <DependentUpon>frmClassification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\frmClassification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\frmJournalEntry.Designer.vb">
+      <DependentUpon>frmJournalEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\frmJournalEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\FSummary_Purchased_Item_Update_viewing.Designer.vb">
+      <DependentUpon>FSummary_Purchased_Item_Update_viewing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\FSummary_Purchased_Item_Update_viewing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\summary_date_time_picker.Designer.vb">
+      <DependentUpon>summary_date_time_picker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\summary_date_time_picker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\Summary_Purchased_Item.Designer.vb">
+      <DependentUpon>Summary_Purchased_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\accounting purchased item\Summary_Purchased_Item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Allowance\allawance_report_form.Designer.vb">
+      <DependentUpon>allawance_report_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Allowance\allawance_report_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Allowance\AllowanceReportFormNew.Designer.vb">
+      <DependentUpon>AllowanceReportFormNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Allowance\AllowanceReportFormNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Allowance\allowance_dataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allowance_dataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Allowance\allowance_dataSet.vb">
+      <DependentUpon>allowance_dataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Allowance\Allowance_sum.Designer.vb">
+      <DependentUpon>Allowance_sum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Allowance\Allowance_sum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Allowance\designation_form.Designer.vb">
+      <DependentUpon>designation_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Allowance\designation_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Allowance\FAllowance.Designer.vb">
+      <DependentUpon>FAllowance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Allowance\FAllowance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Allowance\For_Deleting_Verification.Designer.vb">
+      <DependentUpon>For_Deleting_Verification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Allowance\For_Deleting_Verification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Allowance\FPerson_Name.Designer.vb">
+      <DependentUpon>FPerson_Name.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Allowance\FPerson_Name.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Allowance\GenerateDataForm.Designer.vb">
+      <DependentUpon>GenerateDataForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Allowance\GenerateDataForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Allowance\voucher_input.Designer.vb">
+      <DependentUpon>voucher_input.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Allowance\voucher_input.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrowed_Item_List.Designer.vb">
+      <DependentUpon>FBorrowed_Item_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrowed_Item_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrowed_Item_Monitoring.Designer.vb">
+      <DependentUpon>FBorrowed_Item_Monitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrowed_Item_Monitoring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower.Designer.vb">
+      <DependentUpon>FBorrower.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrowerItems.Designer.vb">
+      <DependentUpon>FBorrowerItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrowerItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrowerMultipleCharges.Designer.vb">
+      <DependentUpon>FBorrowerMultipleCharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrowerMultipleCharges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_Details.designer.vb">
+      <DependentUpon>FBorrower_Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_Expiration.Designer.vb">
+      <DependentUpon>FBorrower_Expiration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_Expiration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_History.Designer.vb">
+      <DependentUpon>FBorrower_History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_History.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_return_items.Designer.vb">
+      <DependentUpon>FBorrower_return_items.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_return_items.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_Set_Item.Designer.vb">
+      <DependentUpon>FBorrower_Set_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_Set_Item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_Set_Item_No.Designer.vb">
+      <DependentUpon>FBorrower_Set_Item_No.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_Set_Item_No.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_Turnover.Designer.vb">
+      <DependentUpon>FBorrower_Turnover.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_Turnover.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_Turnover_Items.Designer.vb">
+      <DependentUpon>FBorrower_Turnover_Items.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FBorrower_Turnover_Items.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FCreateCharges.Designer.vb">
+      <DependentUpon>FCreateCharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FCreateCharges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FFac_Tools_maintenance.Designer.vb">
+      <DependentUpon>FFac_Tools_maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FFac_Tools_maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FListofBorrowerItem.Designer.vb">
+      <DependentUpon>FListofBorrowerItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FListofBorrowerItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Borrower\FSplitQty.Designer.vb">
+      <DependentUpon>FSplitQty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Borrower\FSplitQty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\charges\FCreateChargesNew.Designer.vb">
+      <DependentUpon>FCreateChargesNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\charges\FCreateChargesNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\class_charges.vb" />
+    <Compile Include="Supply\construction\FConstruction_Items.Designer.vb">
+      <DependentUpon>FConstruction_Items.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\construction\FConstruction_Items.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\employees\ListOfEmployeesForm.Designer.vb">
+      <DependentUpon>ListOfEmployeesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\employees\ListOfEmployeesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment History\DataSet_Equipment_History.vb">
+      <DependentUpon>DataSet_Equipment_History.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\DataSet_Arrival_Equip_Rental.vb">
+      <DependentUpon>DataSet_Arrival_Equip_Rental.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\EquipmentCulmulativeStatementFormReport.Designer.vb">
+      <DependentUpon>EquipmentCulmulativeStatementFormReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\EquipmentCulmulativeStatementFormReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\EquipmentMonthlyIncomeFormReport.Designer.vb">
+      <DependentUpon>EquipmentMonthlyIncomeFormReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\EquipmentMonthlyIncomeFormReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\EquipmentMonthlyReportForm.Designer.vb">
+      <DependentUpon>EquipmentMonthlyReportForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\EquipmentMonthlyReportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\EquipmentQuarterlyIncomeFormReport.Designer.vb">
+      <DependentUpon>EquipmentQuarterlyIncomeFormReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\EquipmentQuarterlyIncomeFormReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\Equipment_Capital_Investment_ReportForm.Designer.vb">
+      <DependentUpon>Equipment_Capital_Investment_ReportForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\Equipment_Capital_Investment_ReportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\equipment_consolidated_ReportForm.Designer.vb">
+      <DependentUpon>equipment_consolidated_ReportForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\equipment_consolidated_ReportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FEquipment_Monthly_Cost_Report_typeofequip_Form.Designer.vb">
+      <DependentUpon>FEquipment_Monthly_Cost_Report_typeofequip_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FEquipment_Monthly_Cost_Report_typeofequip_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FReportable_Data.Designer.vb">
+      <DependentUpon>FReportable_Data.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FReportable_Data.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\EUS and SUPPLY Updater\FEU_and_Supply_Updater.Designer.vb">
+      <DependentUpon>FEU_and_Supply_Updater.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\EUS and SUPPLY Updater\FEU_and_Supply_Updater.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\General Exporting Form\ExportingRecordForm.Designer.vb">
+      <DependentUpon>ExportingRecordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\General Exporting Form\ExportingRecordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\General Exporting Form\frmDateRange.Designer.vb">
+      <DependentUpon>frmDateRange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\General Exporting Form\frmDateRange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\General Exporting Form\frmFilter.Designer.vb">
+      <DependentUpon>frmFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\General Exporting Form\frmFilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\General Exporting Form\frmSearchCode.Designer.vb">
+      <DependentUpon>frmSearchCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\General Exporting Form\frmSearchCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\class_aggregates_monitoring.vb" />
+    <Compile Include="Supply\Hauling and Crushing\class_aggregates_obj.vb" />
+    <Compile Include="Supply\Hauling and Crushing\Class_DR.vb" />
+    <Compile Include="Supply\Hauling and Crushing\class_DR2.vb" />
+    <Compile Include="Supply\Hauling and Crushing\class_important\class_new_dr.vb" />
+    <Compile Include="Supply\Hauling and Crushing\class_important\class_new_po.vb" />
+    <Compile Include="Supply\Hauling and Crushing\class_important\class_new_rr.vb" />
+    <Compile Include="Supply\Hauling and Crushing\class_important\class_progressbar.vb" />
+    <Compile Include="Supply\Hauling and Crushing\class_important\class_rs.vb" />
+    <Compile Include="Supply\Hauling and Crushing\class_important\class_searcher.vb" />
+    <Compile Include="Supply\Hauling and Crushing\class_important\class_ws.vb" />
+    <Compile Include="Supply\Hauling and Crushing\DRLIST_SEARCHBY.Designer.vb">
+      <DependentUpon>DRLIST_SEARCHBY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\DRLIST_SEARCHBY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\EditDR1.Designer.vb">
+      <DependentUpon>EditDR1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\EditDR1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\EditDR2.Designer.vb">
+      <DependentUpon>EditDR2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\EditDR2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FAggregates_Balance.Designer.vb">
+      <DependentUpon>FAggregates_Balance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FAggregates_Balance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FAggregates_General_Request2.Designer.vb">
+      <DependentUpon>FAggregates_General_Request2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FAggregates_General_Request2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FCreateDeliveryReceipt.Designer.vb">
+      <DependentUpon>FCreateDeliveryReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FCreateDeliveryReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FDRLIST1.Designer.vb">
+      <DependentUpon>FDRLIST1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FDRLIST1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FDRLIST2.Designer.vb">
+      <DependentUpon>FDRLIST2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FDRLIST2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\Form22.Designer.vb">
+      <DependentUpon>Form22.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\Form22.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FRequestorList.Designer.vb">
+      <DependentUpon>FRequestorList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FRequestorList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FWHtoWH.Designer.vb">
+      <DependentUpon>FWHtoWH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FWHtoWH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\maintenance\class_project.vb" />
+    <Compile Include="Supply\maintenance\FColumnSettings.Designer.vb">
+      <DependentUpon>FColumnSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\maintenance\FColumnSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\maintenance\FUnderMaintenance.Designer.vb">
+      <DependentUpon>FUnderMaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\maintenance\FUnderMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\main\formAccountTitle.Designer.vb">
+      <DependentUpon>formAccountTitle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\main\formAccountTitle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\purchase_order\CLASS_PO.vb" />
+    <Compile Include="Supply\purchase_order\CreatePurchaseOrderForm.Designer.vb">
+      <DependentUpon>CreatePurchaseOrderForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\purchase_order\CreatePurchaseOrderForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\purchase_order\DataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\purchase_order\FEditPOQTY.Designer.vb">
+      <DependentUpon>FEditPOQTY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\purchase_order\FEditPOQTY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\purchase_order\PO_report_view_bbc.Designer.vb">
+      <DependentUpon>PO_report_view_bbc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\purchase_order\PO_report_view_bbc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\purchase_order\PO_report_view_jqg.Designer.vb">
+      <DependentUpon>PO_report_view_jqg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\purchase_order\PO_report_view_jqg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\purchase_order\Report_view_final.Designer.vb">
+      <DependentUpon>Report_view_final.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\purchase_order\Report_view_final.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\purchase_order\Po_dataset.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Po_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\purchase_order\PO_report_view.Designer.vb">
+      <DependentUpon>PO_report_view.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\purchase_order\PO_report_view.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\purchase_order\UpdateForm.Designer.vb">
+      <DependentUpon>UpdateForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\purchase_order\UpdateForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\qto\frmQuanitityTakeOff.designer.vb">
+      <DependentUpon>frmQuanitityTakeOff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\qto\frmQuanitityTakeOff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Quantity_takeoff\FContract_Item_Name.Designer.vb">
+      <DependentUpon>FContract_Item_Name.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Quantity_takeoff\FContract_Item_Name.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Quantity_takeoff\FQtyTakeOffPartView.Designer.vb">
+      <DependentUpon>FQtyTakeOffPartView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Quantity_takeoff\FQtyTakeOffPartView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Quantity_takeoff\FQty_takeoff_balances.Designer.vb">
+      <DependentUpon>FQty_takeoff_balances.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Quantity_takeoff\FQty_takeoff_balances.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\receiving_form\Class_Receiving.vb" />
+    <Compile Include="Supply\receiving_form\class_receiving_.vb" />
+    <Compile Include="Supply\receiving_form\FAddTireSerialNo.Designer.vb">
+      <DependentUpon>FAddTireSerialNo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FAddTireSerialNo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FCreateReceiving.Designer.vb">
+      <DependentUpon>FCreateReceiving.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FCreateReceiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceivingReportListNew.Designer.vb">
+      <DependentUpon>FReceivingReportListNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceivingReportListNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceiving_Items2.Designer.vb">
+      <DependentUpon>FReceiving_Items2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceiving_Items2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceiving_Searchby.Designer.vb">
+      <DependentUpon>FReceiving_Searchby.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceiving_Searchby.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FTireSerial.Designer.vb">
+      <DependentUpon>FTireSerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FTireSerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\Canvas_Datasets1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Canvas_Datasets.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\canvas_report_FORMVIEW.Designer.vb">
+      <DependentUpon>canvas_report_FORMVIEW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\canvas_report_FORMVIEW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\canvas_report_FORMVIEW_2.Designer.vb">
+      <DependentUpon>canvas_report_FORMVIEW_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\canvas_report_FORMVIEW_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\Canvas_Report_req.Designer.vb">
+      <DependentUpon>Canvas_Report_req.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\Canvas_Report_req.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\class_exclusive_aggregates.vb" />
+    <Compile Include="Supply\requisition_slip\class_main_rs_qty.vb" />
+    <Compile Include="Supply\requisition_slip\Class_RR.vb" />
+    <Compile Include="Supply\requisition_slip\Class_RS_Search.vb" />
+    <Compile Include="Supply\requisition_slip\Class_Search_Charges.vb" />
+    <Compile Include="Supply\requisition_slip\class_summary_of_hauled_agg.vb" />
+    <Compile Include="Supply\requisition_slip\EXPORT_TO_EXCEL_FILE.vb" />
+    <Compile Include="Supply\requisition_slip\FCancelForm.Designer.vb">
+      <DependentUpon>FCancelForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FCancelForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FCancelServicesForm.Designer.vb">
+      <DependentUpon>FCancelServicesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FCancelServicesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FCreateRSForm.Designer.vb">
+      <DependentUpon>FCreateRSForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FCreateRSForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FEditRSQtyOnly.Designer.vb">
+      <DependentUpon>FEditRSQtyOnly.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FEditRSQtyOnly.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FMainRS_New.Designer.vb">
+      <DependentUpon>FMainRS_New.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FMainRS_New.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FRequesitionFormForDR.Designer.vb">
+      <DependentUpon>FRequesitionFormForDR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FRequesitionFormForDR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FRequesitionSearchBy.Designer.vb">
+      <DependentUpon>FRequesitionSearchBy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FRequesitionSearchBy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FRequesition_SearchItem.Designer.vb">
+      <DependentUpon>FRequesition_SearchItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FRequesition_SearchItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FRequisition_Non_Item.Designer.vb">
+      <DependentUpon>FRequisition_Non_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FRequisition_Non_Item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FReq_qty_takeOff.Designer.vb">
+      <DependentUpon>FReq_qty_takeOff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FReq_qty_takeOff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FSearchByChargesNew.Designer.vb">
+      <DependentUpon>FSearchByChargesNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FSearchByChargesNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FSelectItemsForSummaryOFHauledAgg.Designer.vb">
+      <DependentUpon>FSelectItemsForSummaryOFHauledAgg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FSelectItemsForSummaryOFHauledAgg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\Load_Request_Field.vb" />
+    <Compile Include="Supply\requisition_slip\useRsForm.vb" />
+    <Compile Include="Supply\stock_card\class_agg_remaining_balance.vb" />
+    <Compile Include="Supply\stock_card\class_operator.vb" />
+    <Compile Include="Supply\stock_card\Class_SC_Hauling.vb" />
+    <Compile Include="Supply\stock_card\Class_StockCard_Hauling.vb" />
+    <Compile Include="Supply\stock_card\class_stockpile.vb" />
+    <Compile Include="Supply\stock_card\class_stock_card_for_hauling.vb" />
+    <Compile Include="Supply\stock_card\class_supplier.vb" />
+    <Compile Include="Supply\stock_card\FSelectedAggregates.Designer.vb">
+      <DependentUpon>FSelectedAggregates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\stock_card\FSelectedAggregates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\stock_card\FStockCard3.Designer.vb">
+      <DependentUpon>FStockCard3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\stock_card\FStockCard3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\stock_card\FStockMonitoring.Designer.vb">
+      <DependentUpon>FStockMonitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\stock_card\FStockMonitoring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\stock_card\FStockMonitoring_AggregatesList.Designer.vb">
+      <DependentUpon>FStockMonitoring_AggregatesList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\stock_card\FStockMonitoring_AggregatesList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\stock_card\FStockpile_monitoring.Designer.vb">
+      <DependentUpon>FStockpile_monitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\stock_card\FStockpile_monitoring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\stock_card\mod_stock_pile.vb" />
+    <Compile Include="Supply\stock_card\StockCard1.Designer.vb">
+      <DependentUpon>StockCard1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\stock_card\StockCard1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\stock_card\StockCard2.Designer.vb">
+      <DependentUpon>StockCard2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\stock_card\StockCard2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\date_log_range.Designer.vb">
+      <DependentUpon>date_log_range.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\date_log_range.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\FLateRsLog_PoLogView.Designer.vb">
+      <DependentUpon>FLateRsLog_PoLogView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\FLateRsLog_PoLogView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\summary_purchased_items\DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\summary_purchased_items\DataSet2.vb">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\equipment cost report\DataSet_equipment_cost.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_equipment_cost.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\equipment cost report\DataSet_equipment_cost.vb">
+      <DependentUpon>DataSet_equipment_cost.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\equipment cost report\FEquipment_cost_report.Designer.vb">
+      <DependentUpon>FEquipment_cost_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\equipment cost report\FEquipment_cost_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\equipment cost report\FEquipment_cost_report_viewer.Designer.vb">
+      <DependentUpon>FEquipment_cost_report_viewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\equipment cost report\FEquipment_cost_report_viewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment History\DataSet_Equipment_History.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Equipment_History.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment History\FEquipment_history.Designer.vb">
+      <DependentUpon>FEquipment_history.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment History\FEquipment_history.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment History\FEquipment_history_searchby_date.Designer.vb">
+      <DependentUpon>FEquipment_history_searchby_date.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment History\FEquipment_history_searchby_date.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment History\FReport.Designer.vb">
+      <DependentUpon>FReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment History\FReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment History\FReport_Old.Designer.vb">
+      <DependentUpon>FReport_Old.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment History\FReport_Old.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\DataSet_all_type.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_all_type.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\DataSet_all_type.vb">
+      <DependentUpon>DataSet_all_type.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\DataSet_Arrival_Equip_Rental.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Arrival_Equip_Rental.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\DataSet_EquiMon_TypeOfEquip.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_EquiMon_TypeOfEquip.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\DataSet_Equip_Investment_Monitoring.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Equip_Investment_Monitoring.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\DataSet_SumOfQcquiredEquip.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_SumOfQcquiredEquip.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\DataSet_SumOfQcquiredEquip.vb">
+      <DependentUpon>DataSet_SumOfQcquiredEquip.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\DataSet_SumOf_All_AquiredEquip.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_SumOf_All_AquiredEquip.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FAll_Summary_of_acquiredEquipment.Designer.vb">
+      <DependentUpon>FAll_Summary_of_acquiredEquipment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FAll_Summary_of_acquiredEquipment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FAll_Type.Designer.vb">
+      <DependentUpon>FAll_Type.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FAll_Type.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FArrival_Equip_Rental_Report.Designer.vb">
+      <DependentUpon>FArrival_Equip_Rental_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FArrival_Equip_Rental_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FEquipment_InvestmentMonitoring.Designer.vb">
+      <DependentUpon>FEquipment_InvestmentMonitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FEquipment_InvestmentMonitoring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FEquipment_InvestmentMonitoring_Viewer.Designer.vb">
+      <DependentUpon>FEquipment_InvestmentMonitoring_Viewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FEquipment_InvestmentMonitoring_Viewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FEquipment_monitoring.Designer.vb">
+      <DependentUpon>FEquipment_monitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FEquipment_monitoring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FEquipMon_TypeOfEquip.Designer.vb">
+      <DependentUpon>FEquipMon_TypeOfEquip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FEquipMon_TypeOfEquip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FIncome_statement.Designer.vb">
+      <DependentUpon>FIncome_statement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FIncome_statement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\frm_equipment_range.Designer.vb">
+      <DependentUpon>frm_equipment_range.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\frm_equipment_range.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FSummary_of_AcquiredEquipment.Designer.vb">
+      <DependentUpon>FSummary_of_AcquiredEquipment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FSummary_of_AcquiredEquipment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FSumOfAquiredEquip.Designer.vb">
+      <DependentUpon>FSumOfAquiredEquip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FSumOfAquiredEquip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FSumOf_All_AquiredEqui_report.Designer.vb">
+      <DependentUpon>FSumOf_All_AquiredEqui_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Equipment Monitoring\FSumOf_All_AquiredEqui_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Facilities\FOldFacilities.Designer.vb">
+      <DependentUpon>FOldFacilities.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Facilities\FOldFacilities.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supplier\FAddSupplier.Designer.vb">
+      <DependentUpon>FAddSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="supplier\FAddSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\cash_voucher\FCashVoucher.Designer.vb">
+      <DependentUpon>FCashVoucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\cash_voucher\FCashVoucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\cash_voucher\FCashVoucherList.Designer.vb">
+      <DependentUpon>FCashVoucherList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\cash_voucher\FCashVoucherList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\FchangePassword.Designer.vb">
+      <DependentUpon>FchangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\FchangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\FCrystal_Reports_StockCard.Designer.vb">
+      <DependentUpon>FCrystal_Reports_StockCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\FCrystal_Reports_StockCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\FBorrowedDetails.Designer.vb">
+      <DependentUpon>FBorrowedDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\FBorrowedDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="publicvariables.vb" />
+    <Compile Include="Supply\FBorrowerSlip.Designer.vb">
+      <DependentUpon>FBorrowerSlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\FBorrowerSlip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\FBorrow_List.Designer.vb">
+      <DependentUpon>FBorrow_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\FBorrow_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\FChargeTo.Designer.vb">
+      <DependentUpon>FChargeTo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\FChargeTo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\charges\FCharge_To.Designer.vb">
+      <DependentUpon>FCharge_To.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\charges\FCharge_To.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\FFacilities_Tools.Designer.vb">
+      <DependentUpon>FFacilities_Tools.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\FFacilities_Tools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\FImportsWarehouseItems.Designer.vb">
+      <DependentUpon>FImportsWarehouseItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\FImportsWarehouseItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\FSupplyTransaction.Designer.vb">
+      <DependentUpon>FSupplyTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\FSupplyTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\datasetHaulingReport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datasetHaulingReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\EditDR.Designer.vb">
+      <DependentUpon>EditDR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\EditDR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FAggregatesForm.Designer.vb">
+      <DependentUpon>FAggregatesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FAggregatesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FAggregates_Exemption.Designer.vb">
+      <DependentUpon>FAggregates_Exemption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FAggregates_Exemption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FAggregates_General_Request.Designer.vb">
+      <DependentUpon>FAggregates_General_Request.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FAggregates_General_Request.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FDeliveryReceipt.Designer.vb">
+      <DependentUpon>FDeliveryReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FDeliveryReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FDRLIST.Designer.vb">
+      <DependentUpon>FDRLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FDRLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FEditPrice.Designer.vb">
+      <DependentUpon>FEditPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FEditPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FGenerateSelectedItem.Designer.vb">
+      <DependentUpon>FGenerateSelectedItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FGenerateSelectedItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FHaulingReportView.Designer.vb">
+      <DependentUpon>FHaulingReportView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FHaulingReportView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FPreparedbyvb.Designer.vb">
+      <DependentUpon>FPreparedbyvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FPreparedbyvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FSelectEqupiment.Designer.vb">
+      <DependentUpon>FSelectEqupiment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FSelectEqupiment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FSORTBY.Designer.vb">
+      <DependentUpon>FSORTBY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FSORTBY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FWasteExcemption.Designer.vb">
+      <DependentUpon>FWasteExcemption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FWasteExcemption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FWithoutDr.Designer.vb">
+      <DependentUpon>FWithoutDr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FWithoutDr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FWorWODRvb.Designer.vb">
+      <DependentUpon>FWorWODRvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FWorWODRvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\HauledReport.Designer.vb">
+      <DependentUpon>HauledReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\HauledReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Labor Cost\FLaborCost.Designer.vb">
+      <DependentUpon>FLaborCost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Labor Cost\FLaborCost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Labor Cost\FLaborcostInputFields.Designer.vb">
+      <DependentUpon>FLaborcostInputFields.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Labor Cost\FLaborcostInputFields.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Liquidation Report\FLiquidationReport.Designer.vb">
+      <DependentUpon>FLiquidationReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Liquidation Report\FLiquidationReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\maintenance\DataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\maintenance\FImport_excel.Designer.vb">
+      <DependentUpon>FImport_excel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\maintenance\FImport_excel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\maintenance\FProject_maintenance.Designer.vb">
+      <DependentUpon>FProject_maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\maintenance\FProject_maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\maintenance\FReport_project_maintenance.Designer.vb">
+      <DependentUpon>FReport_project_maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\maintenance\FReport_project_maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Project Cost\DataSet_monthlyProjectCost.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_monthlyProjectCost.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Project Cost\DataSet_ProjectCost.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ProjectCost.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Project Cost\DataSet_ProjectCost.vb">
+      <DependentUpon>DataSet_ProjectCost.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Project Cost\FMonthlyProjectCost.Designer.vb">
+      <DependentUpon>FMonthlyProjectCost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Project Cost\FMonthlyProjectCost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Project Cost\FMonthlyProjectCost_Report.Designer.vb">
+      <DependentUpon>FMonthlyProjectCost_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Project Cost\FMonthlyProjectCost_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Project Cost\FProjectCost.Designer.vb">
+      <DependentUpon>FProjectCost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Project Cost\FProjectCost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Project Cost\FProject_Cost_Report.Designer.vb">
+      <DependentUpon>FProject_Cost_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Project Cost\FProject_Cost_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Quantity_takeoff\FConstruct_Quantities.Designer.vb">
+      <DependentUpon>FConstruct_Quantities.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Quantity_takeoff\FConstruct_Quantities.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Quantity_takeoff\FQTO_Maintenance.Designer.vb">
+      <DependentUpon>FQTO_Maintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Quantity_takeoff\FQTO_Maintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Quantity_takeoff\FQty_takeoff.Designer.vb">
+      <DependentUpon>FQty_takeoff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Quantity_takeoff\FQty_takeoff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Quantity_takeoff\FVariation_Order.Designer.vb">
+      <DependentUpon>FVariation_Order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Quantity_takeoff\FVariation_Order.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceiving_Create_New_Item.Designer.vb">
+      <DependentUpon>FReceiving_Create_New_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceiving_Create_New_Item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceiving_Find_Related_Item.Designer.vb" />
+    <Compile Include="Supply\receiving_form\FReceiving_Find_Related_Item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceiving_Info.Designer.vb">
+      <DependentUpon>FReceiving_Info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceiving_Info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceiving_Items.Designer.vb">
+      <DependentUpon>FReceiving_Items.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceiving_Items.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceiving_Items_Monitoring.Designer.vb">
+      <DependentUpon>FReceiving_Items_Monitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceiving_Items_Monitoring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FUpdateItemNameDesc.Designer.vb">
+      <DependentUpon>FUpdateItemNameDesc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FUpdateItemNameDesc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FBulkRequest.Designer.vb">
+      <DependentUpon>FBulkRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FBulkRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FDivisionCategory.Designer.vb">
+      <DependentUpon>FDivisionCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FDivisionCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FNEWRSFORM.Designer.vb">
+      <DependentUpon>FNEWRSFORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FNEWRSFORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\Fsearchbycharges.Designer.vb">
+      <DependentUpon>Fsearchbycharges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\Fsearchbycharges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Sets_Item\FAdd_Set_Name.Designer.vb">
+      <DependentUpon>FAdd_Set_Name.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Sets_Item\FAdd_Set_Name.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Sets_Item\FItem_Sets.Designer.vb">
+      <DependentUpon>FItem_Sets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Sets_Item\FItem_Sets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Sets_Item\set_item.Designer.vb">
+      <DependentUpon>set_item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Sets_Item\set_item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\stock_card\DataSetStock_Card.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetStock_Card.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\stock_card\DataSetStock_Card.vb">
+      <DependentUpon>DataSetStock_Card.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\stock_card\StockCardRepotForm.Designer.vb">
+      <DependentUpon>StockCardRepotForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\stock_card\StockCardRepotForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\DataSet_Summary_Progress_Report.Designer.vb">
+      <DependentUpon>DataSet_Summary_Progress_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\DataSet_Summary_Progress_Report.vb">
+      <DependentUpon>DataSet_Summary_Progress_Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\DataSet_Summary_Progress_Report_Revised.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Summary_Progress_Report_Revised.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\DataSet_Total_Request_All_Category.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Total_Request_All_Category.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\DataSet_Total_Request_All_Category.vb">
+      <DependentUpon>DataSet_Total_Request_All_Category.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\FProgressReport.Designer.vb">
+      <DependentUpon>FProgressReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\FProgressReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\FReportViewer_ProgressReport.Designer.vb">
+      <DependentUpon>FReportViewer_ProgressReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\FReportViewer_ProgressReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\FReportViewer_ProgressReportRevised.Designer.vb">
+      <DependentUpon>FReportViewer_ProgressReportRevised.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\FReportViewer_ProgressReportRevised.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Supplier_Evaluation_Form\EvaluationResultView.Designer.vb">
+      <DependentUpon>EvaluationResultView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Supplier_Evaluation_Form\EvaluationResultView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Supplier_Evaluation_Form\ListofEvaluatedSupplierForm.Designer.vb">
+      <DependentUpon>ListofEvaluatedSupplierForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Supplier_Evaluation_Form\ListofEvaluatedSupplierForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Supplier_Evaluation_Form\Service_Provider_Evaluation_ReportForm.Designer.vb">
+      <DependentUpon>Service_Provider_Evaluation_ReportForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Supplier_Evaluation_Form\Service_Provider_Evaluation_ReportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Supplier_Evaluation_Form\SupplierEvaluationFormForm.Designer.vb">
+      <DependentUpon>SupplierEvaluationFormForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Supplier_Evaluation_Form\SupplierEvaluationFormForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\user_information\FEditUserAccess.Designer.vb">
+      <DependentUpon>FEditUserAccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\user_information\FEditUserAccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\user_information\FEditUserInfo.Designer.vb" />
+    <Compile Include="Supply\user_information\FEditUserInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\User_Info\FUserInfo.Designer.vb">
+      <DependentUpon>FUserInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\User_Info\FUserInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\Class_PlaceHolder_Warehouse.vb" />
+    <Compile Include="Supply\warehouse\DataSet_ListOfWarehouseItems.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ListOfWarehouseItems.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FAggregatesPrices.Designer.vb">
+      <DependentUpon>FAggregatesPrices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FAggregatesPrices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\FCreateWarehouseItemForm.Designer.vb">
+      <DependentUpon>FCreateWarehouseItemForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FCreateWarehouseItemForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\FEndorseItem.Designer.vb">
+      <DependentUpon>FEndorseItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FEndorseItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\FKeyPerformanceIndicator.Designer.vb">
+      <DependentUpon>FKeyPerformanceIndicator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FKeyPerformanceIndicator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\FkeyPerformanceIndicatorNew.Designer.vb">
+      <DependentUpon>FkeyPerformanceIndicatorNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FkeyPerformanceIndicatorNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\FLinkToProperNaming.Designer.vb">
+      <DependentUpon>FLinkToProperNaming.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FLinkToProperNaming.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\FListOfItems.Designer.vb">
+      <DependentUpon>FListOfItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FListOfItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Floading.Designer.vb">
+      <DependentUpon>Floading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Floading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\main\FMain.Designer.vb">
+      <DependentUpon>FMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\main\FMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Turnover Materials\FMaterials_ToolsTurnOverReport.Designer.vb">
+      <DependentUpon>FMaterials_ToolsTurnOverReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Turnover Materials\FMaterials_ToolsTurnOverReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\FMaterials_ToolsTurnOverTextFields.Designer.vb">
+      <DependentUpon>FMaterials_ToolsTurnOverTextFields.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\FMaterials_ToolsTurnOverTextFields.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\FPersonalItem.Designer.vb">
+      <DependentUpon>FPersonalItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\FPersonalItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\purchase_order\FPOFORM.Designer.vb">
+      <DependentUpon>FPOFORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\purchase_order\FPOFORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\previous_stock_card\FPreviousStackCardFinal.Designer.vb">
+      <DependentUpon>FPreviousStackCardFinal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\previous_stock_card\FPreviousStackCardFinal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\previous_stock_card\FPreviousStockCard.Designer.vb">
+      <DependentUpon>FPreviousStockCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\previous_stock_card\FPreviousStockCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\charges\FProjectIncharge.Designer.vb">
+      <DependentUpon>FProjectIncharge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\charges\FProjectIncharge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\purchase_order\FPurchasedOrderList.Designer.vb">
+      <DependentUpon>FPurchasedOrderList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\purchase_order\FPurchasedOrderList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\FPurchaseOrder.Designer.vb">
+      <DependentUpon>FPurchaseOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\FPurchaseOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceivingReportList.Designer.vb">
+      <DependentUpon>FReceivingReportList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceivingReportList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\summary_purchased_items\FSummaryofPurchasedItems.Designer.vb">
+      <DependentUpon>FSummaryofPurchasedItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\summary_purchased_items\FSummaryofPurchasedItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\FSummarySupplyTransaction.Designer.vb">
+      <DependentUpon>FSummarySupplyTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\summary_for_supply\FSummarySupplyTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\user_information\FRegistrationForm.Designer.vb">
+      <DependentUpon>FRegistrationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\user_information\FRegistrationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FRequestFields.Designer.vb">
+      <DependentUpon>FRequestFields.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FRequestFields.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FRequistionForm.Designer.vb">
+      <DependentUpon>FRequistionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\requisition_slip\FRequistionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\stock_card\FStockCard.Designer.vb">
+      <DependentUpon>FStockCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\stock_card\FStockCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\FPrices_Item.Designer.vb">
+      <DependentUpon>FPrices_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FPrices_Item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\Freportviewer_ListOfWarehouseItems.Designer.vb">
+      <DependentUpon>Freportviewer_ListOfWarehouseItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\Freportviewer_ListOfWarehouseItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\FTurnover_History.Designer.vb">
+      <DependentUpon>FTurnover_History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FTurnover_History.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\FWarehouseArea.Designer.vb">
+      <DependentUpon>FWarehouseArea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FWarehouseArea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\FWarehouseClassification.Designer.vb">
+      <DependentUpon>FWarehouseClassification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\FWarehouseClassification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\FWarehouseAreaNew.Designer.vb">
+      <DependentUpon>FWarehouseAreaNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FWarehouseAreaNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\FWarehouseItemsNew.Designer.vb">
+      <DependentUpon>FWarehouseItemsNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FWarehouseItemsNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\FWarehouse_FacilitiesTools_Checking.Designer.vb">
+      <DependentUpon>FWarehouse_FacilitiesTools_Checking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FWarehouse_FacilitiesTools_Checking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\FWH_Incharge.Designer.vb">
+      <DependentUpon>FWH_Incharge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FWH_Incharge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\ItemCheckedForm.Designer.vb">
+      <DependentUpon>ItemCheckedForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\ItemCheckedForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\warehouse\ViewPriceHistory.Designer.vb">
+      <DependentUpon>ViewPriceHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\ViewPriceHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\class_withdrawal.vb" />
+    <Compile Include="Supply\withdrawal_slip\FCreateWithdrawalSlip.Designer.vb">
+      <DependentUpon>FCreateWithdrawalSlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\FCreateWithdrawalSlip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\FCreateWithdrawalSlipForDr.Designer.vb">
+      <DependentUpon>FCreateWithdrawalSlipForDr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\FCreateWithdrawalSlipForDr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\Fwarehouse_Kpi_Preview_Report.Designer.vb">
+      <DependentUpon>Fwarehouse_Kpi_Preview_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\Fwarehouse_Kpi_Preview_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\FWithdrawalList.Designer.vb">
+      <DependentUpon>FWithdrawalList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\FWithdrawalList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\FWithdrawalSlip.Designer.vb">
+      <DependentUpon>FWithdrawalSlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\FWithdrawalSlip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Supply\warehouse\FWarehouseItems.Designer.vb">
+      <DependentUpon>FWarehouseItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\warehouse\FWarehouseItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyFunction.vb" />
+    <Compile Include="Supply\receiving_form\FReceivingReport.Designer.vb">
+      <DependentUpon>FReceivingReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\receiving_form\FReceivingReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OLEDBcon.vb" />
+    <Compile Include="SQLcon.vb" />
+    <Compile Include="Supply\summary_purchased_items\ReportSummaryPurchasedItem.Designer.vb">
+      <DependentUpon>ReportSummaryPurchasedItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\summary_purchased_items\ReportSummaryPurchasedItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\Turnover Materials\FMaterial_Turnover_Fields.Designer.vb">
+      <DependentUpon>FMaterial_Turnover_Fields.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Turnover Materials\FMaterial_Turnover_Fields.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\user_information\FLogin.Designer.vb">
+      <DependentUpon>FLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\user_information\FLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\Fwithdrawal_dataset.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fwithdrawal_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\Fwithdrawal_dataset.vb">
+      <DependentUpon>Fwithdrawal_dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\Fwithdrawal_kpi_report.Designer.vb">
+      <DependentUpon>Fwithdrawal_kpi_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\Fwithdrawal_kpi_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\Fwithdrawal_kpi_report_form.Designer.vb">
+      <DependentUpon>Fwithdrawal_kpi_report_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\Fwithdrawal_kpi_report_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\Fwithdrawal_report_form.Designer.vb">
+      <DependentUpon>Fwithdrawal_report_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\Fwithdrawal_report_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\FWithdrawnItems.Designer.vb">
+      <DependentUpon>FWithdrawnItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\FWithdrawnItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\projectcode_reportForm.Designer.vb">
+      <DependentUpon>projectcode_reportForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\projectcode_reportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply\withdrawal_slip\warehouseKpiDataSets.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>warehouseKpiDataSets.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="supply_dbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>supply_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="supply_dbDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>supply_dbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="types\T_exportDateLogPrice.vb" />
+    <Compile Include="useCases\charges\deleteChargesServices.vb" />
+    <Compile Include="useCases\delivery_receipt\CreateDeliveryReceiptForWithdrawalServices.vb" />
+    <Compile Include="useCases\delivery_receipt\DeleteDeliveryReceiptServices.vb" />
+    <Compile Include="useCases\purchase_order\CreatePurchaseOrderServices.vb" />
+    <Compile Include="useCases\purchase_order\PrintPurchaseOrderServices.vb" />
+    <Compile Include="useCases\purchase_order\UpdatePurchaseOrderServices.vb" />
+    <Compile Include="useCases\receiving\CreateReceivingServices.vb" />
+    <Compile Include="useCases\receiving\DeleteReceivingServices.vb" />
+    <Compile Include="useCases\receiving\UpdateReceivingServices.vb" />
+    <Compile Include="useCases\requesition\CreateRequesitionSlipChargesServices.vb" />
+    <Compile Include="useCases\requesition\CreateRequesitionSlipServices.vb" />
+    <Compile Include="useCases\requesition\DeleteRequesitionSlipServices.vb" />
+    <Compile Include="useCases\requesition\UpdateItemCheckedServices.vb" />
+    <Compile Include="useCases\requesition\UpdateRequesitionSlipServices.vb" />
+    <Compile Include="useCases\warehouse_items_new\CreateWarehouseItemServices.vb" />
+    <Compile Include="useCases\warehouse_items_new\deleteWarehouseItemServices.vb" />
+    <Compile Include="useCases\warehouse_items_new\GetWarehouseItemServices.vb" />
+    <Compile Include="useCases\warehouse_items_new\UpdateWarehouseItemServices.vb" />
+    <Compile Include="useCases\withdrawal\CreateWithdrawalForDrServices.vb" />
+    <Compile Include="useCases\withdrawal\CreateWithdrawalForWarehousing.vb" />
+    <Compile Include="useCases\withdrawal\UpdateWithdrawalForDrServices.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="crWithdrawalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crWithdrawalReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRequisition_Slip_Input.resx">
+      <DependentUpon>FRequisition_Slip_Input.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWithdrawalReport.resx">
+      <DependentUpon>frmWithdrawalReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network\FNetwork_Config.resx">
+      <DependentUpon>FNetwork_Config.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAMPLEREPORT.resx">
+      <DependentUpon>SAMPLEREPORT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Accident Report\FAccidentReport.resx">
+      <DependentUpon>FAccidentReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Accident Report\FAccidentReportField.resx">
+      <DependentUpon>FAccidentReportField.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Accident Report\FAccidentReport_next_page.resx">
+      <DependentUpon>FAccidentReport_next_page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Accident Report\FAccidentReport_page2.resx">
+      <DependentUpon>FAccidentReport_page2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\accounting purchased item\frmAccountTitle.resx">
+      <DependentUpon>frmAccountTitle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\accounting purchased item\frmCharges.resx">
+      <DependentUpon>frmCharges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\accounting purchased item\frmClassification.resx">
+      <DependentUpon>frmClassification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\accounting purchased item\frmJournalEntry.resx">
+      <DependentUpon>frmJournalEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\accounting purchased item\FSummary_Purchased_Item_Update_viewing.resx">
+      <DependentUpon>FSummary_Purchased_Item_Update_viewing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\accounting purchased item\Report_Purchased_Item_Update.rdlc" />
+    <EmbeddedResource Include="Supply\accounting purchased item\summary_date_time_picker.resx">
+      <DependentUpon>summary_date_time_picker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\accounting purchased item\Summary_Purchased_Item.resx">
+      <DependentUpon>Summary_Purchased_Item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Allowance\allawance_report_form.resx">
+      <DependentUpon>allawance_report_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Allowance\AllowanceReportFormNew.resx">
+      <DependentUpon>AllowanceReportFormNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Allowance\Allowance_report.rdlc" />
+    <EmbeddedResource Include="Supply\Allowance\Allowance_report_with_previous.rdlc" />
+    <EmbeddedResource Include="Supply\Allowance\Allowance_sum.resx">
+      <DependentUpon>Allowance_sum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Allowance\designation_form.resx">
+      <DependentUpon>designation_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Allowance\FAllowance.resx">
+      <DependentUpon>FAllowance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Allowance\For_Deleting_Verification.resx">
+      <DependentUpon>For_Deleting_Verification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Allowance\FPerson_Name.resx">
+      <DependentUpon>FPerson_Name.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Allowance\GenerateDataForm.resx">
+      <DependentUpon>GenerateDataForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Allowance\voucher_input.resx">
+      <DependentUpon>voucher_input.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FBorrowed_Item_List.resx">
+      <DependentUpon>FBorrowed_Item_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FBorrowerMultipleCharges.resx">
+      <DependentUpon>FBorrowerMultipleCharges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FBorrower_Details.resx">
+      <DependentUpon>FBorrower_Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FBorrower_Expiration.resx">
+      <DependentUpon>FBorrower_Expiration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FBorrower_History.resx">
+      <DependentUpon>FBorrower_History.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FBorrower_return_items.resx">
+      <DependentUpon>FBorrower_return_items.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FBorrower_Set_Item.resx">
+      <DependentUpon>FBorrower_Set_Item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FBorrower_Set_Item_No.resx">
+      <DependentUpon>FBorrower_Set_Item_No.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FBorrower_Turnover.resx">
+      <DependentUpon>FBorrower_Turnover.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FBorrower_Turnover_Items.resx">
+      <DependentUpon>FBorrower_Turnover_Items.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FCreateCharges.resx">
+      <DependentUpon>FCreateCharges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FFac_Tools_maintenance.resx">
+      <DependentUpon>FFac_Tools_maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FListofBorrowerItem.resx">
+      <DependentUpon>FListofBorrowerItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FSplitQty.resx">
+      <DependentUpon>FSplitQty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\charges\FCreateChargesNew.resx">
+      <DependentUpon>FCreateChargesNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\construction\FConstruction_Items.resx">
+      <DependentUpon>FConstruction_Items.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\employees\ListOfEmployeesForm.resx">
+      <DependentUpon>ListOfEmployeesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\equipment cost report\Equipment_cost_report.rdlc" />
+    <EmbeddedResource Include="Supply\equipment cost report\FEquipment_cost_report.resx">
+      <DependentUpon>FEquipment_cost_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\equipment cost report\FEquipment_cost_report_viewer.resx">
+      <DependentUpon>FEquipment_cost_report_viewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment History\EquipmentHistory_Report.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment History\EquipmentHistory_Report_old.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment History\FEquipment_history.resx">
+      <DependentUpon>FEquipment_history.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment History\FEquipment_history_searchby_date.resx">
+      <DependentUpon>FEquipment_history_searchby_date.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment History\FReport.resx">
+      <DependentUpon>FReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment History\FReport_Old.resx">
+      <DependentUpon>FReport_Old.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\EquipmentCapitalInvestemtReport.rdlc" />
+    <EmbeddedResource Include="Supply\Equipment Monitoring\EquipmentCulmulativeStatementFormReport.resx">
+      <DependentUpon>EquipmentCulmulativeStatementFormReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\EquipmentMonthlyIncomeFormReport.resx">
+      <DependentUpon>EquipmentMonthlyIncomeFormReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\EquipmentMonthlyReportForm.resx">
+      <DependentUpon>EquipmentMonthlyReportForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\EquipmentQuarterlyIncomeFormReport.resx">
+      <DependentUpon>EquipmentQuarterlyIncomeFormReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\Equipment_Capital_Investment_ReportForm.resx">
+      <DependentUpon>Equipment_Capital_Investment_ReportForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\equipment_consolidated_report.rdlc" />
+    <EmbeddedResource Include="Supply\Equipment Monitoring\equipment_consolidated_ReportForm.resx">
+      <DependentUpon>equipment_consolidated_ReportForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\equipment_monthly_income_statement.rdlc" />
+    <EmbeddedResource Include="Supply\Equipment Monitoring\equipment_monthly_income_Statement_revise - Copy.rdlc" />
+    <EmbeddedResource Include="Supply\Equipment Monitoring\equipment_monthly_income_Statement_revise.rdlc" />
+    <EmbeddedResource Include="Supply\Equipment Monitoring\equipment_monthly_report.rdlc" />
+    <EmbeddedResource Include="Supply\Equipment Monitoring\equipment_quarterly_cost_report.rdlc" />
+    <EmbeddedResource Include="Supply\Equipment Monitoring\FEquipment_InvestmentMonitoring_Viewer.resx">
+      <DependentUpon>FEquipment_InvestmentMonitoring_Viewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\FEquipment_Monthly_Cost_Report_typeofequip_Form.resx">
+      <DependentUpon>FEquipment_Monthly_Cost_Report_typeofequip_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\FReportable_Data.resx">
+      <DependentUpon>FReportable_Data.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\equipment_monthly_cost_report.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\Income_Statement_revised_2.rdlc" />
+    <EmbeddedResource Include="Supply\Equipment Monitoring\Report_Equip_Investment_Monitoring.rdlc" />
+    <EmbeddedResource Include="Supply\Equipment Monitoring\FAll_Summary_of_acquiredEquipment.resx">
+      <DependentUpon>FAll_Summary_of_acquiredEquipment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\FAll_Type.resx">
+      <DependentUpon>FAll_Type.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\FArrival_Equip_Rental_Report.resx">
+      <DependentUpon>FArrival_Equip_Rental_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\FEquipment_InvestmentMonitoring.resx">
+      <DependentUpon>FEquipment_InvestmentMonitoring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\FEquipment_monitoring.resx">
+      <DependentUpon>FEquipment_monitoring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\FEquipMon_TypeOfEquip.resx">
+      <DependentUpon>FEquipMon_TypeOfEquip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\FIncome_statement.resx">
+      <DependentUpon>FIncome_statement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\frm_equipment_range.resx">
+      <DependentUpon>frm_equipment_range.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\FSummary_of_AcquiredEquipment.resx">
+      <DependentUpon>FSummary_of_AcquiredEquipment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\FSumOfAquiredEquip.resx">
+      <DependentUpon>FSumOfAquiredEquip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\FSumOf_All_AquiredEqui_report.resx">
+      <DependentUpon>FSumOf_All_AquiredEqui_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\Report_All_Type.rdlc" />
+    <EmbeddedResource Include="Supply\Equipment Monitoring\Report_Arrival_Equip_Rental.rdlc" />
+    <EmbeddedResource Include="Supply\Equipment Monitoring\Report_EquipMon_TypeOfEquip.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Equipment Monitoring\Report_SumOfAquiredEquip.rdlc" />
+    <EmbeddedResource Include="Supply\Equipment Monitoring\Report_SumOf_All_AquiredEquip.rdlc" />
+    <EmbeddedResource Include="Supply\EUS and SUPPLY Updater\FEU_and_Supply_Updater.resx">
+      <DependentUpon>FEU_and_Supply_Updater.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Facilities\FOldFacilities.resx">
+      <DependentUpon>FOldFacilities.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supplier\FAddSupplier.resx">
+      <DependentUpon>FAddSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\charges\FProjectIncharge.resx">
+      <DependentUpon>FProjectIncharge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\FSupplyTransaction.resx">
+      <DependentUpon>FSupplyTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\General Exporting Form\ExportingRecordForm.resx">
+      <DependentUpon>ExportingRecordForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\General Exporting Form\frmDateRange.resx">
+      <DependentUpon>frmDateRange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\General Exporting Form\frmFilter.resx">
+      <DependentUpon>frmFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\General Exporting Form\frmSearchCode.resx">
+      <DependentUpon>frmSearchCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\DRLIST_SEARCHBY.resx">
+      <DependentUpon>DRLIST_SEARCHBY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\EditDR.resx">
+      <DependentUpon>EditDR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\EditDR1.resx">
+      <DependentUpon>EditDR1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\EditDR2.resx">
+      <DependentUpon>EditDR2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FAggregatesForm.resx">
+      <DependentUpon>FAggregatesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FAggregates_Balance.resx">
+      <DependentUpon>FAggregates_Balance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FAggregates_Exemption.resx">
+      <DependentUpon>FAggregates_Exemption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FAggregates_General_Request.resx">
+      <DependentUpon>FAggregates_General_Request.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FAggregates_General_Request2.resx">
+      <DependentUpon>FAggregates_General_Request2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FCreateDeliveryReceipt.resx">
+      <DependentUpon>FCreateDeliveryReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FDeliveryReceipt.resx">
+      <DependentUpon>FDeliveryReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FDRLIST.resx">
+      <DependentUpon>FDRLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FDRLIST1.resx">
+      <DependentUpon>FDRLIST1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FDRLIST2.resx">
+      <DependentUpon>FDRLIST2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FEditPrice.resx">
+      <DependentUpon>FEditPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FGenerateSelectedItem.resx">
+      <DependentUpon>FGenerateSelectedItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FHaulingReportView.resx">
+      <DependentUpon>FHaulingReportView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\Form22.resx">
+      <DependentUpon>Form22.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FPreparedbyvb.resx">
+      <DependentUpon>FPreparedbyvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FRequestorList.resx">
+      <DependentUpon>FRequestorList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FSelectEqupiment.resx">
+      <DependentUpon>FSelectEqupiment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FSORTBY.resx">
+      <DependentUpon>FSORTBY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FWasteExcemption.resx">
+      <DependentUpon>FWasteExcemption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FWHtoWH.resx">
+      <DependentUpon>FWHtoWH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FWithoutDr.resx">
+      <DependentUpon>FWithoutDr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FWorWODRvb.resx">
+      <DependentUpon>FWorWODRvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\HauledReport.resx">
+      <DependentUpon>HauledReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\HaulingReportFinal.rdlc" />
+    <EmbeddedResource Include="Supply\Labor Cost\FLaborCost.resx">
+      <DependentUpon>FLaborCost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Labor Cost\FLaborcostInputFields.resx">
+      <DependentUpon>FLaborcostInputFields.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Liquidation Report\FLiquidationReport.resx">
+      <DependentUpon>FLiquidationReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\maintenance\FColumnSettings.resx">
+      <DependentUpon>FColumnSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\maintenance\FImport_excel.resx">
+      <DependentUpon>FImport_excel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\maintenance\FProject_maintenance.resx">
+      <DependentUpon>FProject_maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\maintenance\FReport_project_maintenance.resx">
+      <DependentUpon>FReport_project_maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\maintenance\FUnderMaintenance.resx">
+      <DependentUpon>FUnderMaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\maintenance\Report_project_maintenance.rdlc" />
+    <EmbeddedResource Include="Supply\main\formAccountTitle.resx">
+      <DependentUpon>formAccountTitle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Project Cost\FMonthlyProjectCost.resx">
+      <DependentUpon>FMonthlyProjectCost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Project Cost\FMonthlyProjectCost_Report.resx">
+      <DependentUpon>FMonthlyProjectCost_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Project Cost\FProjectCost.resx">
+      <DependentUpon>FProjectCost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Project Cost\FProject_Cost_Report.resx">
+      <DependentUpon>FProject_Cost_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Project Cost\Report_monthlyprojectcost.rdlc" />
+    <EmbeddedResource Include="Supply\Project Cost\Report_ProjectCost.rdlc" />
+    <EmbeddedResource Include="Supply\purchase_order\CreatePurchaseOrderForm.resx">
+      <DependentUpon>CreatePurchaseOrderForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\purchase_order\FEditPOQTY.resx">
+      <DependentUpon>FEditPOQTY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\purchase_order\PO_print_report_BBC - Copy.rdlc" />
+    <EmbeddedResource Include="Supply\purchase_order\PO_print_report_JQG.rdlc" />
+    <EmbeddedResource Include="Supply\purchase_order\PO_report_view_bbc.resx">
+      <DependentUpon>PO_report_view_bbc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\purchase_order\PO_report_view_jqg.resx">
+      <DependentUpon>PO_report_view_jqg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\purchase_order\report_view_fina.rdlc" />
+    <EmbeddedResource Include="Supply\purchase_order\Report_view_final.resx">
+      <DependentUpon>Report_view_final.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\purchase_order\PO_print_report.rdlc" />
+    <EmbeddedResource Include="Supply\purchase_order\PO_report_view.resx">
+      <DependentUpon>PO_report_view.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\purchase_order\UpdateForm.resx">
+      <DependentUpon>UpdateForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\qto\frmQuanitityTakeOff.resx">
+      <DependentUpon>frmQuanitityTakeOff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Quantity_takeoff\FConstruct_Quantities.resx">
+      <DependentUpon>FConstruct_Quantities.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Quantity_takeoff\FContract_Item_Name.resx">
+      <DependentUpon>FContract_Item_Name.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Quantity_takeoff\FQTO_Maintenance.resx">
+      <DependentUpon>FQTO_Maintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Quantity_takeoff\FQtyTakeOffPartView.resx">
+      <DependentUpon>FQtyTakeOffPartView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Quantity_takeoff\FQty_takeoff.resx">
+      <DependentUpon>FQty_takeoff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Quantity_takeoff\FQty_takeoff_balances.resx">
+      <DependentUpon>FQty_takeoff_balances.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Quantity_takeoff\FVariation_Order.resx">
+      <DependentUpon>FVariation_Order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\receiving_form\FAddTireSerialNo.resx">
+      <DependentUpon>FAddTireSerialNo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\receiving_form\FCreateReceiving.resx">
+      <DependentUpon>FCreateReceiving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\receiving_form\FReceivingReportListNew.resx">
+      <DependentUpon>FReceivingReportListNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\receiving_form\FReceiving_Create_New_Item.resx">
+      <DependentUpon>FReceiving_Create_New_Item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\receiving_form\FReceiving_Find_Related_Item.resx" />
+    <EmbeddedResource Include="Supply\receiving_form\FReceiving_Info.resx">
+      <DependentUpon>FReceiving_Info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\receiving_form\FReceiving_Items.resx">
+      <DependentUpon>FReceiving_Items.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\receiving_form\FReceiving_Items2.resx">
+      <DependentUpon>FReceiving_Items2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\receiving_form\FReceiving_Items_Monitoring.resx">
+      <DependentUpon>FReceiving_Items_Monitoring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\receiving_form\FReceiving_Searchby.resx">
+      <DependentUpon>FReceiving_Searchby.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\receiving_form\FTireSerial.resx">
+      <DependentUpon>FTireSerial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\receiving_form\FUpdateItemNameDesc.resx">
+      <DependentUpon>FUpdateItemNameDesc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Report1.rdlc" />
+    <EmbeddedResource Include="Supply\Borrower\FBorrowed_Item_Monitoring.resx">
+      <DependentUpon>FBorrowed_Item_Monitoring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FBorrower.resx">
+      <DependentUpon>FBorrower.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Borrower\FBorrowerItems.resx">
+      <DependentUpon>FBorrowerItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\cash_voucher\FCashVoucher.resx">
+      <DependentUpon>FCashVoucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\cash_voucher\FCashVoucherList.resx">
+      <DependentUpon>FCashVoucherList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\FchangePassword.resx">
+      <DependentUpon>FchangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\FCrystal_Reports_StockCard.resx">
+      <DependentUpon>FCrystal_Reports_StockCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\FBorrowedDetails.resx">
+      <DependentUpon>FBorrowedDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\FBorrowerSlip.resx">
+      <DependentUpon>FBorrowerSlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\FBorrow_List.resx">
+      <DependentUpon>FBorrow_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\FChargeTo.resx">
+      <DependentUpon>FChargeTo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\charges\FCharge_To.resx">
+      <DependentUpon>FCharge_To.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\FFacilities_Tools.resx">
+      <DependentUpon>FFacilities_Tools.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\FImportsWarehouseItems.resx">
+      <DependentUpon>FImportsWarehouseItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\canvas_reportRDLC.rdlc" />
+    <EmbeddedResource Include="Supply\requisition_slip\canvas_report_FORMVIEW.resx">
+      <DependentUpon>canvas_report_FORMVIEW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\canvas_report_FORMVIEW_2.resx">
+      <DependentUpon>canvas_report_FORMVIEW_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\Canvas_Report_req.resx">
+      <DependentUpon>Canvas_Report_req.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\canvas_temp_RDLC_2.rdlc" />
+    <EmbeddedResource Include="Supply\requisition_slip\canvas_temp_RDLC.rdlc" />
+    <EmbeddedResource Include="Supply\requisition_slip\FBulkRequest.resx">
+      <DependentUpon>FBulkRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FCancelForm.resx">
+      <DependentUpon>FCancelForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FCancelServicesForm.resx">
+      <DependentUpon>FCancelServicesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FCreateRSForm.resx">
+      <DependentUpon>FCreateRSForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FDivisionCategory.resx">
+      <DependentUpon>FDivisionCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FEditRSQtyOnly.resx">
+      <DependentUpon>FEditRSQtyOnly.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FMainRS_New.resx">
+      <DependentUpon>FMainRS_New.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FNEWRSFORM.resx">
+      <DependentUpon>FNEWRSFORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FRequesitionFormForDR.resx">
+      <DependentUpon>FRequesitionFormForDR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FRequesitionSearchBy.resx">
+      <DependentUpon>FRequesitionSearchBy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FRequesition_SearchItem.resx">
+      <DependentUpon>FRequesition_SearchItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FRequisition_Non_Item.resx">
+      <DependentUpon>FRequisition_Non_Item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FReq_qty_takeOff.resx">
+      <DependentUpon>FReq_qty_takeOff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\Fsearchbycharges.resx">
+      <DependentUpon>Fsearchbycharges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FSearchByChargesNew.resx">
+      <DependentUpon>FSearchByChargesNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FSelectItemsForSummaryOFHauledAgg.resx">
+      <DependentUpon>FSelectItemsForSummaryOFHauledAgg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Sets_Item\FAdd_Set_Name.resx">
+      <DependentUpon>FAdd_Set_Name.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Sets_Item\FItem_Sets.resx">
+      <DependentUpon>FItem_Sets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Sets_Item\set_item.resx">
+      <DependentUpon>set_item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\stock_card\FSelectedAggregates.resx">
+      <DependentUpon>FSelectedAggregates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\stock_card\FStockCard3.resx">
+      <DependentUpon>FStockCard3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\stock_card\FStockMonitoring.resx">
+      <DependentUpon>FStockMonitoring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\stock_card\FStockMonitoring_AggregatesList.resx">
+      <DependentUpon>FStockMonitoring_AggregatesList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\stock_card\FStockpile_monitoring.resx">
+      <DependentUpon>FStockpile_monitoring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\stock_card\ReportStock_card.rdlc" />
+    <EmbeddedResource Include="Supply\stock_card\StockCard1.resx">
+      <DependentUpon>StockCard1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\stock_card\StockCard2.resx">
+      <DependentUpon>StockCard2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\stock_card\StockCardRepotForm.resx">
+      <DependentUpon>StockCardRepotForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\summary_for_supply\date_log_range.resx">
+      <DependentUpon>date_log_range.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\summary_for_supply\FLateRsLog_PoLogView.resx">
+      <DependentUpon>FLateRsLog_PoLogView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\summary_for_supply\FProgressReport.resx">
+      <DependentUpon>FProgressReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\summary_for_supply\FReportViewer_ProgressReport.resx">
+      <DependentUpon>FReportViewer_ProgressReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\summary_for_supply\FReportViewer_ProgressReportRevised.resx">
+      <DependentUpon>FReportViewer_ProgressReportRevised.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\summary_for_supply\ProgressReport_Output.rdlc" />
+    <EmbeddedResource Include="Supply\summary_for_supply\ProgressReport_Output_Revised.rdlc" />
+    <EmbeddedResource Include="Supply\Supplier_Evaluation_Form\EvaluationResultView.resx">
+      <DependentUpon>EvaluationResultView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Supplier_Evaluation_Form\EvaluationView.rdlc" />
+    <EmbeddedResource Include="Supply\Supplier_Evaluation_Form\Evaluation_View_Service_Provider.rdlc" />
+    <EmbeddedResource Include="Supply\Supplier_Evaluation_Form\ListofEvaluatedSupplierForm.resx">
+      <DependentUpon>ListofEvaluatedSupplierForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Supplier_Evaluation_Form\Service_Provider_Evaluation_ReportForm.resx">
+      <DependentUpon>Service_Provider_Evaluation_ReportForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Supplier_Evaluation_Form\SupplierEvaluationFormForm.resx">
+      <DependentUpon>SupplierEvaluationFormForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\user_information\FEditUserAccess.resx">
+      <DependentUpon>FEditUserAccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\user_information\FEditUserInfo.resx" />
+    <EmbeddedResource Include="Supply\User_Info\FUserInfo.resx">
+      <DependentUpon>FUserInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\FAggregatesPrices.resx">
+      <DependentUpon>FAggregatesPrices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\FCreateWarehouseItemForm.resx">
+      <DependentUpon>FCreateWarehouseItemForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\FEndorseItem.resx">
+      <DependentUpon>FEndorseItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\FKeyPerformanceIndicator.resx">
+      <DependentUpon>FKeyPerformanceIndicator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\FkeyPerformanceIndicatorNew.resx">
+      <DependentUpon>FkeyPerformanceIndicatorNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\FLinkToProperNaming.resx">
+      <DependentUpon>FLinkToProperNaming.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\FListOfItems.resx">
+      <DependentUpon>FListOfItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Floading.resx">
+      <DependentUpon>Floading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\main\FMain.resx">
+      <DependentUpon>FMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Turnover Materials\FMaterials_ToolsTurnOverReport.resx">
+      <DependentUpon>FMaterials_ToolsTurnOverReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\FMaterials_ToolsTurnOverTextFields.resx">
+      <DependentUpon>FMaterials_ToolsTurnOverTextFields.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\FPersonalItem.resx">
+      <DependentUpon>FPersonalItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\purchase_order\FPOFORM.resx">
+      <DependentUpon>FPOFORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\previous_stock_card\FPreviousStackCardFinal.resx">
+      <DependentUpon>FPreviousStackCardFinal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\previous_stock_card\FPreviousStockCard.resx">
+      <DependentUpon>FPreviousStockCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\purchase_order\FPurchasedOrderList.resx">
+      <DependentUpon>FPurchasedOrderList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\FPurchaseOrder.resx">
+      <DependentUpon>FPurchaseOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\receiving_form\FReceivingReportList.resx">
+      <DependentUpon>FReceivingReportList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\summary_purchased_items\FSummaryofPurchasedItems.resx">
+      <DependentUpon>FSummaryofPurchasedItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\summary_for_supply\FSummarySupplyTransaction.resx">
+      <DependentUpon>FSummarySupplyTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\user_information\FRegistrationForm.resx">
+      <DependentUpon>FRegistrationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FRequestFields.resx">
+      <DependentUpon>FRequestFields.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\requisition_slip\FRequistionForm.resx">
+      <DependentUpon>FRequistionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\stock_card\FStockCard.resx">
+      <DependentUpon>FStockCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\FPrices_Item.resx">
+      <DependentUpon>FPrices_Item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\Freportviewer_ListOfWarehouseItems.resx">
+      <DependentUpon>Freportviewer_ListOfWarehouseItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\FTurnover_History.resx">
+      <DependentUpon>FTurnover_History.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\FWarehouseArea.resx">
+      <DependentUpon>FWarehouseArea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\FWarehouseClassification.resx">
+      <DependentUpon>FWarehouseClassification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\FWarehouseAreaNew.resx">
+      <DependentUpon>FWarehouseAreaNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\FWarehouseItemsNew.resx">
+      <DependentUpon>FWarehouseItemsNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\FWarehouse_FacilitiesTools_Checking.resx">
+      <DependentUpon>FWarehouse_FacilitiesTools_Checking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\FWH_Incharge.resx">
+      <DependentUpon>FWH_Incharge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\ItemCheckedForm.resx">
+      <DependentUpon>ItemCheckedForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\Report_ListOfWarehouseItems.rdlc" />
+    <EmbeddedResource Include="Supply\warehouse\ViewPriceHistory.resx">
+      <DependentUpon>ViewPriceHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\withdrawal_slip\FCreateWithdrawalSlip.resx">
+      <DependentUpon>FCreateWithdrawalSlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\withdrawal_slip\FCreateWithdrawalSlipForDr.resx">
+      <DependentUpon>FCreateWithdrawalSlipForDr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\withdrawal_slip\Fwarehouse_Kpi_Preview_Report.resx">
+      <DependentUpon>Fwarehouse_Kpi_Preview_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\withdrawal_slip\FWithdrawalList.resx">
+      <DependentUpon>FWithdrawalList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\withdrawal_slip\FWithdrawalSlip.resx">
+      <DependentUpon>FWithdrawalSlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\warehouse\FWarehouseItems.resx">
+      <DependentUpon>FWarehouseItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\receiving_form\FReceivingReport.resx">
+      <DependentUpon>FReceivingReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\summary_purchased_items\ReportSummaryOfPurchasedItem_viewing.rdlc" />
+    <EmbeddedResource Include="Supply\summary_purchased_items\ReportSummaryPurchasedItem.resx">
+      <DependentUpon>ReportSummaryPurchasedItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Turnover Materials\FMaterial_Turnover_Fields.resx">
+      <DependentUpon>FMaterial_Turnover_Fields.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\user_information\FLogin.resx">
+      <DependentUpon>FLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\withdrawal_slip\Fwithdrawal_kpi_report.resx">
+      <DependentUpon>Fwithdrawal_kpi_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\withdrawal_slip\Fwithdrawal_kpi_report_form.resx">
+      <DependentUpon>Fwithdrawal_kpi_report_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\withdrawal_slip\Fwithdrawal_report_form.resx">
+      <DependentUpon>Fwithdrawal_report_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\withdrawal_slip\FWithdrawnItems.resx">
+      <DependentUpon>FWithdrawnItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\withdrawal_slip\Fwithdraw_Report.rdlc" />
+    <EmbeddedResource Include="Supply\withdrawal_slip\Projectcode_Report.rdlc" />
+    <EmbeddedResource Include="Supply\withdrawal_slip\projectcode_reportForm.resx">
+      <DependentUpon>projectcode_reportForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\withdrawal_slip\warehousing_kpi_report.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\DataSet1.datasource" />
+    <None Include="My Project\DataSources\DataSet1.dtDataDataTable.datasource" />
+    <None Include="My Project\DataSources\DataSet1.dtDataRow.datasource" />
+    <None Include="My Project\DataSources\DataSet1.dtDataRowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\DataSet1.dtDataRowChangeEventHandler.datasource" />
+    <None Include="My Project\DataSources\DataSet2.datasource" />
+    <None Include="My Project\DataSources\DataSet2.dtSummaryPurchaseItemDataTable.datasource" />
+    <None Include="My Project\DataSources\DataSet2.dtSummaryPurchaseItemRow.datasource" />
+    <None Include="My Project\DataSources\DataSet2.dtSummaryPurchaseItemRowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\DataSet2.dtSummaryPurchaseItemRowChangeEventHandler.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtAdmin_RequestDataTable.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtAdmin_RequestRow.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtAdmin_RequestRowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtAdmin_RequestRowChangeEventHandler.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtEquipment_RequestDataTable.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtEquipment_RequestRow.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtEquipment_RequestRowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtEquipment_RequestRowChangeEventHandler.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtmajor_requestDataTable.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtmajor_requestRow.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtmajor_requestRowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtmajor_requestRowChangeEventHandler.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtminor_requestDataTable.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtminor_requestRow.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtminor_requestRowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtminor_requestRowChangeEventHandler.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtUnserved_RequestDataTable.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtUnserved_RequestRow.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtUnserved_RequestRowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\DataSet_Summary_Progress_Report.dtUnserved_RequestRowChangeEventHandler.datasource" />
+    <None Include="My Project\DataSources\DataSet_Total_Request_All_Category.datasource" />
+    <None Include="My Project\DataSources\FAddSupplier.datasource" />
+    <None Include="My Project\DataSources\FBorrowedDetails.datasource" />
+    <None Include="My Project\DataSources\FBorrowed_Item_List.datasource" />
+    <None Include="My Project\DataSources\FBorrowed_Item_Monitoring.datasource" />
+    <None Include="My Project\DataSources\FBorrower.datasource" />
+    <None Include="My Project\DataSources\FBorrowerItems.datasource" />
+    <None Include="My Project\DataSources\FBorrowerMultipleCharges.datasource" />
+    <None Include="My Project\DataSources\FBorrowerSlip.datasource" />
+    <None Include="My Project\DataSources\FBorrower_Details.datasource" />
+    <None Include="My Project\DataSources\FBorrower_Expiration.datasource" />
+    <None Include="My Project\DataSources\FBorrower_History.datasource" />
+    <None Include="My Project\DataSources\FBorrower_return_items.datasource" />
+    <None Include="My Project\DataSources\FBorrower_Turnover.datasource" />
+    <None Include="My Project\DataSources\FBorrow_List.datasource" />
+    <None Include="My Project\DataSources\FCashVoucher.datasource" />
+    <None Include="My Project\DataSources\FCashVoucherList.datasource" />
+    <None Include="My Project\DataSources\FchangePassword.datasource" />
+    <None Include="My Project\DataSources\FChargeTo.datasource" />
+    <None Include="My Project\DataSources\FCharge_To.datasource" />
+    <None Include="My Project\DataSources\FCreateCharges.datasource" />
+    <None Include="My Project\DataSources\FCrystal_Reports_StockCard.datasource" />
+    <None Include="My Project\DataSources\FDeliveryReceipt.datasource" />
+    <None Include="My Project\DataSources\FDRLIST.datasource" />
+    <None Include="My Project\DataSources\FFacilities_Tools.datasource" />
+    <None Include="My Project\DataSources\FImportsWarehouseItems.datasource" />
+    <None Include="My Project\DataSources\FListofBorrowerItem.datasource" />
+    <None Include="My Project\DataSources\FListOfItems.datasource" />
+    <None Include="My Project\DataSources\Floading.datasource" />
+    <None Include="My Project\DataSources\FLogin.datasource" />
+    <None Include="My Project\DataSources\FMain.datasource" />
+    <None Include="My Project\DataSources\FMaterials_ToolsTurnOverReport.datasource" />
+    <None Include="My Project\DataSources\FMaterials_ToolsTurnOverTextFields.datasource" />
+    <None Include="My Project\DataSources\FMaterial_Turnover_Fields.datasource" />
+    <None Include="My Project\DataSources\FNetwork_Config.datasource" />
+    <None Include="My Project\DataSources\FOldFacilities.datasource" />
+    <None Include="My Project\DataSources\Form1.datasource" />
+    <None Include="My Project\DataSources\Form2.datasource" />
+    <None Include="My Project\DataSources\FPersonalItem.datasource" />
+    <None Include="My Project\DataSources\FPOFORM.datasource" />
+    <None Include="My Project\DataSources\FPreviousStackCardFinal.datasource" />
+    <None Include="My Project\DataSources\FPreviousStockCard.datasource" />
+    <None Include="My Project\DataSources\FProgressReport.datasource" />
+    <None Include="My Project\DataSources\FProjectIncharge.datasource" />
+    <None Include="My Project\DataSources\FProject_maintenance.datasource" />
+    <None Include="My Project\DataSources\FPurchasedOrderList.datasource" />
+    <None Include="My Project\DataSources\FPurchaseOrder.datasource" />
+    <None Include="My Project\DataSources\FReceivingReport.datasource" />
+    <None Include="My Project\DataSources\FReceivingReportList.datasource" />
+    <None Include="My Project\DataSources\FReceiving_Info.datasource" />
+    <None Include="My Project\DataSources\FReceiving_Items.datasource" />
+    <None Include="My Project\DataSources\FReceiving_Items_Monitoring.datasource" />
+    <None Include="My Project\DataSources\FRegistrationForm.datasource" />
+    <None Include="My Project\DataSources\FReportViewer_ProgressReport.datasource" />
+    <None Include="My Project\DataSources\FRequestField.datasource" />
+    <None Include="My Project\DataSources\FRequisition_Slip_Input.datasource" />
+    <None Include="My Project\DataSources\FRequistionForm.datasource" />
+    <None Include="My Project\DataSources\FSelectEqupiment.datasource" />
+    <None Include="My Project\DataSources\FSplitQty.datasource" />
+    <None Include="My Project\DataSources\FStockCard.datasource" />
+    <None Include="My Project\DataSources\FSummaryofPurchasedItems.datasource" />
+    <None Include="My Project\DataSources\FSummarySupplyTransaction.datasource" />
+    <None Include="My Project\DataSources\FSupplyTransaction.datasource" />
+    <None Include="My Project\DataSources\function_charges.datasource" />
+    <None Include="My Project\DataSources\FWarehouseArea.datasource" />
+    <None Include="My Project\DataSources\FWarehouseClassification.datasource" />
+    <None Include="My Project\DataSources\FWarehouseItems.datasource" />
+    <None Include="My Project\DataSources\FWithdrawalList.datasource" />
+    <None Include="My Project\DataSources\FWithdrawalSlip.datasource" />
+    <None Include="My Project\DataSources\MyRenderer.datasource" />
+    <None Include="My Project\DataSources\OLEDBcon.datasource" />
+    <None Include="My Project\DataSources\ReportSummaryPurchasedItem.datasource" />
+    <None Include="My Project\DataSources\SQLcon.datasource" />
+    <None Include="My Project\DataSources\SQLcon2.datasource" />
+    <None Include="My Project\DataSources\SUPPLY.My.MyApplication.datasource" />
+    <None Include="My Project\DataSources\SUPPLY.My.MySettings.datasource" />
+    <None Include="My Project\DataSources\SUPPLY.supply_dbDataSetTableAdapters.dbrequisition_slipTableAdapter.datasource" />
+    <None Include="My Project\DataSources\SUPPLY.supply_dbDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="My Project\DataSources\SUPPLY.supply_dbDataSetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="My Project\DataSources\supply_dbDataSet.datasource" />
+    <None Include="My Project\DataSources\supply_dbDataSet.dbrequisition_slipDataTable.datasource" />
+    <None Include="My Project\DataSources\supply_dbDataSet.dbrequisition_slipRow.datasource" />
+    <None Include="My Project\DataSources\supply_dbDataSet.dbrequisition_slipRowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\supply_dbDataSet.dbrequisition_slipRowChangeEventHandler.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Supply\accounting purchased item\DataSet_Purchased_Items_Update.xsc">
+      <DependentUpon>DataSet_Purchased_Items_Update.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\accounting purchased item\DataSet_Purchased_Items_Update.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Purchased_Items_Update.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\accounting purchased item\DataSet_Purchased_Items_Update.xss">
+      <DependentUpon>DataSet_Purchased_Items_Update.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Allowance\allowance_dataSet.xsc">
+      <DependentUpon>allowance_dataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Allowance\allowance_dataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>allowance_dataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\Allowance\allowance_dataSet.xss">
+      <DependentUpon>allowance_dataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\equipment cost report\DataSet_equipment_cost.xsc">
+      <DependentUpon>DataSet_equipment_cost.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\equipment cost report\DataSet_equipment_cost.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_equipment_cost.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\equipment cost report\DataSet_equipment_cost.xss">
+      <DependentUpon>DataSet_equipment_cost.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Equipment History\DataSet_Equipment_History.xsc">
+      <DependentUpon>DataSet_Equipment_History.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Equipment History\DataSet_Equipment_History.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Equipment_History.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\Equipment History\DataSet_Equipment_History.xss">
+      <DependentUpon>DataSet_Equipment_History.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_all_type.xsc">
+      <DependentUpon>DataSet_all_type.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_all_type.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_all_type.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_all_type.xss">
+      <DependentUpon>DataSet_all_type.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_Arrival_Equip_Rental.xsc">
+      <DependentUpon>DataSet_Arrival_Equip_Rental.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_Arrival_Equip_Rental.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Arrival_Equip_Rental.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_Arrival_Equip_Rental.xss">
+      <DependentUpon>DataSet_Arrival_Equip_Rental.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_EquiMon_TypeOfEquip.xsc">
+      <DependentUpon>DataSet_EquiMon_TypeOfEquip.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_EquiMon_TypeOfEquip.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_EquiMon_TypeOfEquip.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_EquiMon_TypeOfEquip.xss">
+      <DependentUpon>DataSet_EquiMon_TypeOfEquip.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_Equip_Investment_Monitoring.xsc">
+      <DependentUpon>DataSet_Equip_Investment_Monitoring.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_Equip_Investment_Monitoring.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Equip_Investment_Monitoring.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_Equip_Investment_Monitoring.xss">
+      <DependentUpon>DataSet_Equip_Investment_Monitoring.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_SumOfQcquiredEquip.xsc">
+      <DependentUpon>DataSet_SumOfQcquiredEquip.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_SumOfQcquiredEquip.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_SumOfQcquiredEquip.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_SumOfQcquiredEquip.xss">
+      <DependentUpon>DataSet_SumOfQcquiredEquip.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_SumOf_All_AquiredEquip.xsc">
+      <DependentUpon>DataSet_SumOf_All_AquiredEquip.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_SumOf_All_AquiredEquip.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_SumOf_All_AquiredEquip.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\Equipment Monitoring\DataSet_SumOf_All_AquiredEquip.xss">
+      <DependentUpon>DataSet_SumOf_All_AquiredEquip.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Hauling and Crushing\datasetHaulingReport.xsc">
+      <DependentUpon>datasetHaulingReport.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Hauling and Crushing\datasetHaulingReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datasetHaulingReport.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\Hauling and Crushing\datasetHaulingReport.xss">
+      <DependentUpon>datasetHaulingReport.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\maintenance\DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\maintenance\DataSet3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\maintenance\DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Project Cost\DataSet_monthlyProjectCost.xsc">
+      <DependentUpon>DataSet_monthlyProjectCost.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Project Cost\DataSet_monthlyProjectCost.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_monthlyProjectCost.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\Project Cost\DataSet_monthlyProjectCost.xss">
+      <DependentUpon>DataSet_monthlyProjectCost.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Project Cost\DataSet_ProjectCost.xsc">
+      <DependentUpon>DataSet_ProjectCost.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\Project Cost\DataSet_ProjectCost.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ProjectCost.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\Project Cost\DataSet_ProjectCost.xss">
+      <DependentUpon>DataSet_ProjectCost.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\purchase_order\DataSet4.xsc">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\purchase_order\DataSet4.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet4.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\purchase_order\DataSet4.xss">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\purchase_order\Po_dataset.xsc">
+      <DependentUpon>Po_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\purchase_order\Po_dataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Po_dataset.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Supply\purchase_order\Po_dataset.xss">
+      <DependentUpon>Po_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\requisition_slip\Canvas_Datasets.xsc">
+      <DependentUpon>Canvas_Datasets.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\requisition_slip\Canvas_Datasets.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Canvas_Datasets1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Supply\requisition_slip\Canvas_Datasets.xss">
+      <DependentUpon>Canvas_Datasets.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\stock_card\DataSetStock_Card.xsc">
+      <DependentUpon>DataSetStock_Card.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\stock_card\DataSetStock_Card.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetStock_Card.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\stock_card\DataSetStock_Card.xss">
+      <DependentUpon>DataSetStock_Card.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\summary_for_supply\DataSet_Summary_Progress_Report.xsc">
+      <DependentUpon>DataSet_Summary_Progress_Report.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\summary_for_supply\DataSet_Summary_Progress_Report.xsd" />
+    <None Include="Supply\summary_for_supply\DataSet_Summary_Progress_Report.xss">
+      <DependentUpon>DataSet_Summary_Progress_Report.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\summary_for_supply\DataSet_Summary_Progress_Report_Revised.xsc">
+      <DependentUpon>DataSet_Summary_Progress_Report_Revised.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\summary_for_supply\DataSet_Summary_Progress_Report_Revised.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Summary_Progress_Report_Revised.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\summary_for_supply\DataSet_Summary_Progress_Report_Revised.xss">
+      <DependentUpon>DataSet_Summary_Progress_Report_Revised.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\summary_for_supply\DataSet_Total_Request_All_Category.xsc">
+      <DependentUpon>DataSet_Total_Request_All_Category.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\summary_for_supply\DataSet_Total_Request_All_Category.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Total_Request_All_Category.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\summary_for_supply\DataSet_Total_Request_All_Category.xss">
+      <DependentUpon>DataSet_Total_Request_All_Category.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\warehouse\DataSet_ListOfWarehouseItems.xsc">
+      <DependentUpon>DataSet_ListOfWarehouseItems.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\warehouse\DataSet_ListOfWarehouseItems.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ListOfWarehouseItems.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\warehouse\DataSet_ListOfWarehouseItems.xss">
+      <DependentUpon>DataSet_ListOfWarehouseItems.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\withdrawal_slip\Fwithdrawal_dataset.xsc">
+      <DependentUpon>Fwithdrawal_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\withdrawal_slip\Fwithdrawal_dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fwithdrawal_dataset.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\withdrawal_slip\Fwithdrawal_dataset.xss">
+      <DependentUpon>Fwithdrawal_dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\withdrawal_slip\warehouseKpiDataSets.xsc">
+      <DependentUpon>warehouseKpiDataSets.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\withdrawal_slip\warehouseKpiDataSets.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>warehouseKpiDataSets.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\withdrawal_slip\warehouseKpiDataSets.xss">
+      <DependentUpon>warehouseKpiDataSets.xsd</DependentUpon>
+    </None>
+    <None Include="supply_dbDataSet.xsc">
+      <DependentUpon>supply_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="supply_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>supply_dbDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="supply_dbDataSet.xss">
+      <DependentUpon>supply_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="supply_dbDataSet1.xsc">
+      <DependentUpon>supply_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="supply_dbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>supply_dbDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="supply_dbDataSet1.xss">
+      <DependentUpon>supply_dbDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus_sign_neg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Access_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_supply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_line.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_bg_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_bg_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_reg_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle_default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle_format.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle_format1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_button3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eus_bg_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fname_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gender_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_line.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IP_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line_div.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-bg_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus_sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase order icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pw_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receiving icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registration_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restriction_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supply reports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\username_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\withdrawal slip.png" />
+    <None Include="Supply\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock_card_maintenance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reg_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turn-over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_icon.png" />
+    <None Include="Supply\summary_purchased_items\DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Supply\summary_purchased_items\DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Supply\summary_purchased_items\DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon_reach_editorial.png.ico" />
+    <None Include="Resources\transfer.png" />
+    <None Include="Resources\Supplier_Evaluation_icon.png" />
+    <None Include="Resources\blank.png" />
+    <None Include="Resources\allowances.png" />
+    <None Include="Resources\accounting_icon.png" />
+    <None Include="Resources\Bounce-Bar-Preloader-1.gif" />
+    <Content Include="Resources\cash_voucher.png" />
+    <None Include="Resources\cash_voucher1.png" />
+    <None Include="Resources\categories.png" />
+    <None Include="Resources\chat-bubble.png" />
+    <None Include="Resources\check-out.png" />
+    <None Include="Resources\charge_to.png" />
+    <None Include="Resources\categories1.png" />
+    <Content Include="Resources\circle_purchased.png" />
+    <None Include="Resources\circle_purchased1.png" />
+    <None Include="Resources\line_div_below.png" />
+    <None Include="Resources\equipment_history.png" />
+    <None Include="Resources\equipment_cost.png" />
+    <None Include="Resources\liquidation.png" />
+    <None Include="Resources\labor cost.png" />
+    <None Include="Resources\Clear.png" />
+    <None Include="Resources\project_cost_icon2.png" />
+    <None Include="Resources\equipment_monitoring.png" />
+    <None Include="Resources\PVtR.gif" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\loading6.gif" />
+    <None Include="Resources\loading5.gif" />
+    <None Include="Resources\loading4.gif" />
+    <None Include="Resources\loading7.gif" />
+    <None Include="Resources\density.png" />
+    <None Include="Resources\product.png" />
+    <None Include="Resources\loan.png" />
+    <None Include="Resources\open.png" />
+    <None Include="Resources\evaluation_new.jpg" />
+    <None Include="Resources\inbox.png" />
+    <None Include="Resources\philippine-peso.png" />
+    <None Include="Resources\consession.png" />
+    <None Include="Resources\plateno.png" />
+    <None Include="Resources\driver.png" />
+    <None Include="Resources\icons8-supplier-24.png" />
+    <None Include="Resources\done.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\received.png" />
+    <None Include="Resources\schedule.png" />
+    <None Include="Resources\request.png" />
+    <None Include="Resources\spinner.gif" />
+    <None Include="Resources\spinnerNew.gif" />
+    <None Include="Resources\icon_cp_plus_drop.png" />
+    <None Include="Resources\icon_cp_plus_drop_activated.png" />
+    <None Include="Resources\data-storage.png" />
+    <Content Include="Resources\summary_supply.png" />
+    <None Include="Resources\summary_supply1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

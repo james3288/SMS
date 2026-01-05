@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_monthlyProjectCost" targetNamespace="http://tempuri.org/DataSet_monthlyProjectCost.xsd" xmlns:mstns="http://tempuri.org/DataSet_monthlyProjectCost.xsd" xmlns="http://tempuri.org/DataSet_monthlyProjectCost.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_monthlyProjectCost" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_monthlyProjectCost" msprop:Generator_UserDSName="DataSet_monthlyProjectCost">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTP_monthlyproject_cost" msprop:Generator_TableClassName="DTP_monthlyproject_costDataTable" msprop:Generator_TableVarName="tableDTP_monthlyproject_cost" msprop:Generator_TablePropName="DTP_monthlyproject_cost" msprop:Generator_RowDeletingName="DTP_monthlyproject_costRowDeleting" msprop:Generator_RowChangingName="DTP_monthlyproject_costRowChanging" msprop:Generator_RowEvHandlerName="DTP_monthlyproject_costRowChangeEventHandler" msprop:Generator_RowDeletedName="DTP_monthlyproject_costRowDeleted" msprop:Generator_UserTableName="DTP_monthlyproject_cost" msprop:Generator_RowChangedName="DTP_monthlyproject_costRowChanged" msprop:Generator_RowEvArgName="DTP_monthlyproject_costRowChangeEvent" msprop:Generator_RowClassName="DTP_monthlyproject_costRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="project_code" msprop:Generator_ColumnVarNameInTable="columnproject_code" msprop:Generator_ColumnPropNameInRow="project_code" msprop:Generator_ColumnPropNameInTable="project_codeColumn" msprop:Generator_UserColumnName="project_code" type="xs:string" minOccurs="0" />
+              <xs:element name="actual_total" msprop:Generator_ColumnVarNameInTable="columnactual_total" msprop:Generator_ColumnPropNameInRow="actual_total" msprop:Generator_ColumnPropNameInTable="actual_totalColumn" msprop:Generator_UserColumnName="actual_total" type="xs:string" minOccurs="0" />
+              <xs:element name="actual_materials" msprop:Generator_ColumnVarNameInTable="columnactual_materials" msprop:Generator_ColumnPropNameInRow="actual_materials" msprop:Generator_ColumnPropNameInTable="actual_materialsColumn" msprop:Generator_UserColumnName="actual_materials" type="xs:string" minOccurs="0" />
+              <xs:element name="actual_eqpt" msprop:Generator_ColumnVarNameInTable="columnactual_eqpt" msprop:Generator_ColumnPropNameInRow="actual_eqpt" msprop:Generator_ColumnPropNameInTable="actual_eqptColumn" msprop:Generator_UserColumnName="actual_eqpt" type="xs:string" minOccurs="0" />
+              <xs:element name="actual_labor" msprop:Generator_ColumnVarNameInTable="columnactual_labor" msprop:Generator_ColumnPropNameInRow="actual_labor" msprop:Generator_ColumnPropNameInTable="actual_laborColumn" msprop:Generator_UserColumnName="actual_labor" type="xs:string" minOccurs="0" />
+              <xs:element name="budgetary_total" msprop:Generator_ColumnVarNameInTable="columnbudgetary_total" msprop:Generator_ColumnPropNameInRow="budgetary_total" msprop:Generator_ColumnPropNameInTable="budgetary_totalColumn" msprop:Generator_UserColumnName="budgetary_total" type="xs:string" minOccurs="0" />
+              <xs:element name="budgetary_materials" msprop:Generator_ColumnVarNameInTable="columnbudgetary_materials" msprop:Generator_ColumnPropNameInRow="budgetary_materials" msprop:Generator_ColumnPropNameInTable="budgetary_materialsColumn" msprop:Generator_UserColumnName="budgetary_materials" type="xs:string" minOccurs="0" />
+              <xs:element name="budgetary_eqpt" msprop:Generator_ColumnVarNameInTable="columnbudgetary_eqpt" msprop:Generator_ColumnPropNameInRow="budgetary_eqpt" msprop:Generator_ColumnPropNameInTable="budgetary_eqptColumn" msprop:Generator_UserColumnName="budgetary_eqpt" type="xs:string" minOccurs="0" />
+              <xs:element name="budgetary_labor" msprop:Generator_ColumnVarNameInTable="columnbudgetary_labor" msprop:Generator_ColumnPropNameInRow="budgetary_labor" msprop:Generator_ColumnPropNameInTable="budgetary_laborColumn" msprop:Generator_UserColumnName="budgetary_labor" type="xs:string" minOccurs="0" />
+              <xs:element name="percentage_total" msprop:Generator_ColumnVarNameInTable="columnpercentage_total" msprop:Generator_ColumnPropNameInRow="percentage_total" msprop:Generator_ColumnPropNameInTable="percentage_totalColumn" msprop:Generator_UserColumnName="percentage_total" type="xs:string" minOccurs="0" />
+              <xs:element name="percentage_materials" msprop:Generator_ColumnVarNameInTable="columnpercentage_materials" msprop:Generator_ColumnPropNameInRow="percentage_materials" msprop:Generator_ColumnPropNameInTable="percentage_materialsColumn" msprop:Generator_UserColumnName="percentage_materials" type="xs:string" minOccurs="0" />
+              <xs:element name="percentage_eqpt" msprop:Generator_ColumnVarNameInTable="columnpercentage_eqpt" msprop:Generator_ColumnPropNameInRow="percentage_eqpt" msprop:Generator_ColumnPropNameInTable="percentage_eqptColumn" msprop:Generator_UserColumnName="percentage_eqpt" type="xs:string" minOccurs="0" />
+              <xs:element name="percentage_labor" msprop:Generator_ColumnVarNameInTable="columnpercentage_labor" msprop:Generator_ColumnPropNameInRow="percentage_labor" msprop:Generator_ColumnPropNameInTable="percentage_laborColumn" msprop:Generator_UserColumnName="percentage_labor" type="xs:string" minOccurs="0" />
+              <xs:element name="project_accomp" msprop:Generator_ColumnVarNameInTable="columnproject_accomp" msprop:Generator_ColumnPropNameInRow="project_accomp" msprop:Generator_ColumnPropNameInTable="project_accompColumn" msprop:Generator_UserColumnName="project_accomp" type="xs:string" minOccurs="0" />
+              <xs:element name="actual_misc" msprop:Generator_ColumnVarNameInTable="columnactual_misc" msprop:Generator_ColumnPropNameInRow="actual_misc" msprop:Generator_ColumnPropNameInTable="actual_miscColumn" msprop:Generator_UserColumnName="actual_misc" type="xs:string" minOccurs="0" />
+              <xs:element name="budgetary_mic" msprop:Generator_ColumnVarNameInTable="columnbudgetary_mic" msprop:Generator_ColumnPropNameInRow="budgetary_mic" msprop:Generator_ColumnPropNameInTable="budgetary_micColumn" msprop:Generator_UserColumnName="budgetary_mic" type="xs:string" minOccurs="0" />
+              <xs:element name="percentage_misc" msprop:Generator_ColumnVarNameInTable="columnpercentage_misc" msprop:Generator_ColumnPropNameInRow="percentage_misc" msprop:Generator_ColumnPropNameInTable="percentage_miscColumn" msprop:Generator_UserColumnName="percentage_misc" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,1036 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SUPPLY
+</name>
+</assembly>
+<members>
+<member name="T:SUPPLY.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.Access_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.accounting_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.add_supply">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.allowances">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.bg">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.bg_line">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.blank">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.box_bg_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.box_bg_down">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.button_close">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.button_reg">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.button_reg_hover">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.cash_voucher">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.circle_default">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.circle_format">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.circle_format1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.circle_purchased">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.Clear">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.close_button">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.close_button3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.delete_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.edit_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.equipment_cost">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.equipment_history">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.equipment_monitoring">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.eus_bg_03">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.fname_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.gender_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.header_line">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.header_line1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.IP_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.labor_cost">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.line_div">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.line_div_below">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.liquidation">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.login_bg_01">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.Plus_sign">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.Plus_sign_neg">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.project_cost_icon2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.purchase_order_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.pw_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.rec">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.receiving_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.reg_button">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.registration_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.remove_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.Restriction_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.stock_card">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.stock_card_maintenance">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.summary_supply">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.supply_reports">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.turn_over">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.username_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.warehouse">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SUPPLY.My.Resources.Resources.withdrawal_slip">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Purchased_Items_Update">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Purchased_Items_Update.DS_PurchasedUpdateDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Purchased_Items_Update.DS_PurchasedUpdateRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Purchased_Items_Update.DS_PurchasedUpdateRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet1.dtDataDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet1.dtDataRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet1.dtDataRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Equipment_History">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Equipment_History.DTEquipment_historyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Equipment_History.DTEquipment_historyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Equipment_History.DTEquipment_historyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet2">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet2.dtSummaryPurchaseItemDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet2.dtSummaryPurchaseItemRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet2.dtSummaryPurchaseItemRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_equipment_cost">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_equipment_cost.DT_Equipment_costDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_equipment_cost.DT_Equipment_costRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_equipment_cost.DT_Equipment_costRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_all_type">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_all_type.DataTable1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_all_type.DataTable1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_all_type.DataTable1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Arrival_Equip_Rental">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Arrival_Equip_Rental.DataTable1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Arrival_Equip_Rental.DataTable1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Arrival_Equip_Rental.DataTable1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_EquiMon_TypeOfEquip">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_EquiMon_TypeOfEquip.DataTable1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_EquiMon_TypeOfEquip.DataTable1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_EquiMon_TypeOfEquip.DataTable1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Equip_Investment_Monitoring">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Equip_Investment_Monitoring.DS_EquipInvMonitoringDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Equip_Investment_Monitoring.DS_EquipInvMonitoringRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Equip_Investment_Monitoring.DS_EquipInvMonitoringRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_SumOfQcquiredEquip">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_SumOfQcquiredEquip.DataTable1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_SumOfQcquiredEquip.DataTable1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_SumOfQcquiredEquip.DataTable1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_SumOf_All_AquiredEquip">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_SumOf_All_AquiredEquip.DataTable1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_SumOf_All_AquiredEquip.DataTable1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_SumOf_All_AquiredEquip.DataTable1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.datasetHaulingReport">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.datasetHaulingReport.DTEhaulingReportDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.datasetHaulingReport.DTEhaulingReportRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.datasetHaulingReport.DTEhaulingReportRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet3">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet3.DTP_proj_maintenanceDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet3.DTP_proj_maintenanceRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet3.DTP_proj_maintenanceRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_monthlyProjectCost">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_monthlyProjectCost.DTP_monthlyproject_costDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_monthlyProjectCost.DTP_monthlyproject_costRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_monthlyProjectCost.DTP_monthlyproject_costRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_ProjectCost">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_ProjectCost.DataTable1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_ProjectCost.DataTable1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_ProjectCost.DataTable1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSetStock_Card">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSetStock_Card.dtDataStockCardDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSetStock_Card.dtDataStockCardRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSetStock_Card.dtDataStockCardRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report.dtmajor_requestDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report.dtminor_requestDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report.dtEquipment_RequestDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report.dtAdmin_RequestDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report.dtUnserved_RequestDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report.dtmajor_requestRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report.dtminor_requestRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report.dtEquipment_RequestRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report.dtAdmin_RequestRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report.dtUnserved_RequestRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report.dtmajor_requestRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report.dtminor_requestRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report.dtEquipment_RequestRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report.dtAdmin_RequestRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report.dtUnserved_RequestRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtMajor_RequestDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtMinor_RequestDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtEquipment_RequestDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtAdmin_RequestDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtEquipment_Request_RepairDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtEquipment_Request_RehabilitationDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtEquipment_Request_FuelDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtEquipment_Request_TiresDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtUnserved_RequestDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dt_ALLDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtProblemsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtMajor_RequestRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtMinor_RequestRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtEquipment_RequestRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtAdmin_RequestRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtEquipment_Request_RepairRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtEquipment_Request_RehabilitationRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtEquipment_Request_FuelRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtEquipment_Request_TiresRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtUnserved_RequestRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dt_ALLRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtProblemsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtMajor_RequestRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtMinor_RequestRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtEquipment_RequestRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtAdmin_RequestRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtEquipment_Request_RepairRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtEquipment_Request_RehabilitationRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtEquipment_Request_FuelRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtEquipment_Request_TiresRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtUnserved_RequestRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dt_ALLRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Summary_Progress_Report_Revised.dtProblemsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Total_Request_All_Category">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Total_Request_All_Category.dtAll_CategoryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Total_Request_All_Category.dtTotal_CategoryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Total_Request_All_Category.dtAll_CategoryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Total_Request_All_Category.dtTotal_CategoryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Total_Request_All_Category.dtAll_CategoryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.DataSet_Total_Request_All_Category.dtTotal_CategoryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSet.dbrequisition_slipDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSet.dbrequisition_slipRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSet.dbrequisition_slipRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSetTableAdapters.dbrequisition_slipTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:SUPPLY.supply_dbDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(SUPPLY.supply_dbDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:SUPPLY.supply_dbDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(SUPPLY.supply_dbDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:SUPPLY.supply_dbDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(SUPPLY.supply_dbDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:SUPPLY.supply_dbDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:SUPPLY.supply_dbDataSetTableAdapters.TableAdapterManager.UpdateAll(SUPPLY.supply_dbDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSet1.proc_summary_supplyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSet1.proc_summary_supplyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSet1.proc_summary_supplyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSet1TableAdapters.proc_summary_supplyTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:SUPPLY.supply_dbDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(SUPPLY.supply_dbDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:SUPPLY.supply_dbDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(SUPPLY.supply_dbDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:SUPPLY.supply_dbDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(SUPPLY.supply_dbDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:SUPPLY.supply_dbDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:SUPPLY.supply_dbDataSet1TableAdapters.TableAdapterManager.UpdateAll(SUPPLY.supply_dbDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:SUPPLY.supply_dbDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_Summary_Progress_Report" targetNamespace="http://tempuri.org/DataSet_Summary_Progress_Report.xsd" xmlns:mstns="http://tempuri.org/DataSet_Summary_Progress_Report.xsd" xmlns="http://tempuri.org/DataSet_Summary_Progress_Report.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_Summary_Progress_Report" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_Summary_Progress_Report" msprop:Generator_UserDSName="DataSet_Summary_Progress_Report">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtMajor_Request" msprop:Generator_TableClassName="dtmajor_requestDataTable" msprop:Generator_TableVarName="tabledtmajor_request" msprop:Generator_TablePropName="dtmajor_request" msprop:Generator_RowDeletingName="dtmajor_requestRowDeleting" msprop:Generator_RowChangingName="dtmajor_requestRowChanging" msprop:Generator_RowEvHandlerName="dtmajor_requestRowChangeEventHandler" msprop:Generator_RowDeletedName="dtmajor_requestRowDeleted" msprop:Generator_UserTableName="dtMajor_Request" msprop:Generator_RowChangedName="dtmajor_requestRowChanged" msprop:Generator_RowEvArgName="dtmajor_requestRowChangeEvent" msprop:Generator_RowClassName="dtmajor_requestRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnPropNameInTable="codeColumn" msprop:Generator_UserColumnName="code" type="xs:string" minOccurs="0" />
+              <xs:element name="determinant" msprop:Generator_ColumnVarNameInTable="columndeterminant" msprop:Generator_ColumnPropNameInRow="determinant" msprop:Generator_ColumnPropNameInTable="determinantColumn" msprop:Generator_UserColumnName="determinant" type="xs:string" minOccurs="0" />
+              <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:string" minOccurs="0" />
+              <xs:element name="percentage" msprop:Generator_ColumnVarNameInTable="columnpercentage" msprop:Generator_ColumnPropNameInRow="percentage" msprop:Generator_ColumnPropNameInTable="percentageColumn" msprop:Generator_UserColumnName="percentage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtMinor_Request" msprop:Generator_TableClassName="dtminor_requestDataTable" msprop:Generator_TableVarName="tabledtminor_request" msprop:Generator_TablePropName="dtminor_request" msprop:Generator_RowDeletingName="dtminor_requestRowDeleting" msprop:Generator_RowChangingName="dtminor_requestRowChanging" msprop:Generator_RowEvHandlerName="dtminor_requestRowChangeEventHandler" msprop:Generator_RowDeletedName="dtminor_requestRowDeleted" msprop:Generator_UserTableName="dtMinor_Request" msprop:Generator_RowChangedName="dtminor_requestRowChanged" msprop:Generator_RowEvArgName="dtminor_requestRowChangeEvent" msprop:Generator_RowClassName="dtminor_requestRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnPropNameInTable="codeColumn" msprop:Generator_UserColumnName="code" type="xs:string" minOccurs="0" />
+              <xs:element name="determinant" msprop:Generator_ColumnVarNameInTable="columndeterminant" msprop:Generator_ColumnPropNameInRow="determinant" msprop:Generator_ColumnPropNameInTable="determinantColumn" msprop:Generator_UserColumnName="determinant" type="xs:string" minOccurs="0" />
+              <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:string" minOccurs="0" />
+              <xs:element name="percentage" msprop:Generator_ColumnVarNameInTable="columnpercentage" msprop:Generator_ColumnPropNameInRow="percentage" msprop:Generator_ColumnPropNameInTable="percentageColumn" msprop:Generator_UserColumnName="percentage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtEquipment_Request" msprop:Generator_TableClassName="dtEquipment_RequestDataTable" msprop:Generator_TableVarName="tabledtEquipment_Request" msprop:Generator_TablePropName="dtEquipment_Request" msprop:Generator_RowDeletingName="dtEquipment_RequestRowDeleting" msprop:Generator_RowChangingName="dtEquipment_RequestRowChanging" msprop:Generator_RowEvHandlerName="dtEquipment_RequestRowChangeEventHandler" msprop:Generator_RowDeletedName="dtEquipment_RequestRowDeleted" msprop:Generator_UserTableName="dtEquipment_Request" msprop:Generator_RowChangedName="dtEquipment_RequestRowChanged" msprop:Generator_RowEvArgName="dtEquipment_RequestRowChangeEvent" msprop:Generator_RowClassName="dtEquipment_RequestRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnPropNameInTable="codeColumn" msprop:Generator_UserColumnName="code" type="xs:string" minOccurs="0" />
+              <xs:element name="determinant" msprop:Generator_ColumnVarNameInTable="columndeterminant" msprop:Generator_ColumnPropNameInRow="determinant" msprop:Generator_ColumnPropNameInTable="determinantColumn" msprop:Generator_UserColumnName="determinant" type="xs:string" minOccurs="0" />
+              <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:string" minOccurs="0" />
+              <xs:element name="percentage" msprop:Generator_ColumnVarNameInTable="columnpercentage" msprop:Generator_ColumnPropNameInRow="percentage" msprop:Generator_ColumnPropNameInTable="percentageColumn" msprop:Generator_UserColumnName="percentage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtAdmin_Request" msprop:Generator_TableClassName="dtAdmin_RequestDataTable" msprop:Generator_TableVarName="tabledtAdmin_Request" msprop:Generator_TablePropName="dtAdmin_Request" msprop:Generator_RowDeletingName="dtAdmin_RequestRowDeleting" msprop:Generator_RowChangingName="dtAdmin_RequestRowChanging" msprop:Generator_RowEvHandlerName="dtAdmin_RequestRowChangeEventHandler" msprop:Generator_RowDeletedName="dtAdmin_RequestRowDeleted" msprop:Generator_UserTableName="dtAdmin_Request" msprop:Generator_RowChangedName="dtAdmin_RequestRowChanged" msprop:Generator_RowEvArgName="dtAdmin_RequestRowChangeEvent" msprop:Generator_RowClassName="dtAdmin_RequestRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnPropNameInTable="codeColumn" msprop:Generator_UserColumnName="code" type="xs:string" minOccurs="0" />
+              <xs:element name="deteminant" msprop:Generator_ColumnVarNameInTable="columndeteminant" msprop:Generator_ColumnPropNameInRow="deteminant" msprop:Generator_ColumnPropNameInTable="deteminantColumn" msprop:Generator_UserColumnName="deteminant" type="xs:string" minOccurs="0" />
+              <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:string" minOccurs="0" />
+              <xs:element name="percentage" msprop:Generator_ColumnVarNameInTable="columnpercentage" msprop:Generator_ColumnPropNameInRow="percentage" msprop:Generator_ColumnPropNameInTable="percentageColumn" msprop:Generator_UserColumnName="percentage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtEquipment_Request_Repair" msprop:Generator_TableClassName="dtEquipment_Request_RepairDataTable" msprop:Generator_TableVarName="tabledtEquipment_Request_Repair" msprop:Generator_RowChangedName="dtEquipment_Request_RepairRowChanged" msprop:Generator_TablePropName="dtEquipment_Request_Repair" msprop:Generator_RowDeletingName="dtEquipment_Request_RepairRowDeleting" msprop:Generator_RowChangingName="dtEquipment_Request_RepairRowChanging" msprop:Generator_RowEvHandlerName="dtEquipment_Request_RepairRowChangeEventHandler" msprop:Generator_RowDeletedName="dtEquipment_Request_RepairRowDeleted" msprop:Generator_RowClassName="dtEquipment_Request_RepairRow" msprop:Generator_UserTableName="dtEquipment_Request_Repair" msprop:Generator_RowEvArgName="dtEquipment_Request_RepairRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnPropNameInTable="codeColumn" msprop:Generator_UserColumnName="code" type="xs:string" minOccurs="0" />
+              <xs:element name="determinant" msprop:Generator_ColumnVarNameInTable="columndeterminant" msprop:Generator_ColumnPropNameInRow="determinant" msprop:Generator_ColumnPropNameInTable="determinantColumn" msprop:Generator_UserColumnName="determinant" type="xs:string" minOccurs="0" />
+              <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:string" minOccurs="0" />
+              <xs:element name="percentage" msprop:Generator_ColumnVarNameInTable="columnpercentage" msprop:Generator_ColumnPropNameInRow="percentage" msprop:Generator_ColumnPropNameInTable="percentageColumn" msprop:Generator_UserColumnName="percentage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtEquipment_Request_Rehabilitation" msprop:Generator_TableClassName="dtEquipment_Request_RehabilitationDataTable" msprop:Generator_TableVarName="tabledtEquipment_Request_Rehabilitation" msprop:Generator_TablePropName="dtEquipment_Request_Rehabilitation" msprop:Generator_RowDeletingName="dtEquipment_Request_RehabilitationRowDeleting" msprop:Generator_RowChangingName="dtEquipment_Request_RehabilitationRowChanging" msprop:Generator_RowEvHandlerName="dtEquipment_Request_RehabilitationRowChangeEventHandler" msprop:Generator_RowDeletedName="dtEquipment_Request_RehabilitationRowDeleted" msprop:Generator_UserTableName="dtEquipment_Request_Rehabilitation" msprop:Generator_RowChangedName="dtEquipment_Request_RehabilitationRowChanged" msprop:Generator_RowEvArgName="dtEquipment_Request_RehabilitationRowChangeEvent" msprop:Generator_RowClassName="dtEquipment_Request_RehabilitationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnPropNameInTable="codeColumn" msprop:Generator_UserColumnName="code" type="xs:string" minOccurs="0" />
+              <xs:element name="determinant" msprop:Generator_ColumnVarNameInTable="columndeterminant" msprop:Generator_ColumnPropNameInRow="determinant" msprop:Generator_ColumnPropNameInTable="determinantColumn" msprop:Generator_UserColumnName="determinant" type="xs:string" minOccurs="0" />
+              <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:string" minOccurs="0" />
+              <xs:element name="percentage" msprop:Generator_ColumnVarNameInTable="columnpercentage" msprop:Generator_ColumnPropNameInRow="percentage" msprop:Generator_ColumnPropNameInTable="percentageColumn" msprop:Generator_UserColumnName="percentage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtEquipment_Request_Fuel" msprop:Generator_TableClassName="dtEquipment_Request_FuelDataTable" msprop:Generator_TableVarName="tabledtEquipment_Request_Fuel" msprop:Generator_TablePropName="dtEquipment_Request_Fuel" msprop:Generator_RowDeletingName="dtEquipment_Request_FuelRowDeleting" msprop:Generator_RowChangingName="dtEquipment_Request_FuelRowChanging" msprop:Generator_RowEvHandlerName="dtEquipment_Request_FuelRowChangeEventHandler" msprop:Generator_RowDeletedName="dtEquipment_Request_FuelRowDeleted" msprop:Generator_UserTableName="dtEquipment_Request_Fuel" msprop:Generator_RowChangedName="dtEquipment_Request_FuelRowChanged" msprop:Generator_RowEvArgName="dtEquipment_Request_FuelRowChangeEvent" msprop:Generator_RowClassName="dtEquipment_Request_FuelRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnPropNameInTable="codeColumn" msprop:Generator_UserColumnName="code" type="xs:string" minOccurs="0" />
+              <xs:element name="determinant" msprop:Generator_ColumnVarNameInTable="columndeterminant" msprop:Generator_ColumnPropNameInRow="determinant" msprop:Generator_ColumnPropNameInTable="determinantColumn" msprop:Generator_UserColumnName="determinant" type="xs:string" minOccurs="0" />
+              <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:string" minOccurs="0" />
+              <xs:element name="percentage" msprop:Generator_ColumnVarNameInTable="columnpercentage" msprop:Generator_ColumnPropNameInRow="percentage" msprop:Generator_ColumnPropNameInTable="percentageColumn" msprop:Generator_UserColumnName="percentage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtEquipment_Request_Tires" msprop:Generator_TableClassName="dtEquipment_Request_TiresDataTable" msprop:Generator_TableVarName="tabledtEquipment_Request_Tires" msprop:Generator_TablePropName="dtEquipment_Request_Tires" msprop:Generator_RowDeletingName="dtEquipment_Request_TiresRowDeleting" msprop:Generator_RowChangingName="dtEquipment_Request_TiresRowChanging" msprop:Generator_RowEvHandlerName="dtEquipment_Request_TiresRowChangeEventHandler" msprop:Generator_RowDeletedName="dtEquipment_Request_TiresRowDeleted" msprop:Generator_UserTableName="dtEquipment_Request_Tires" msprop:Generator_RowChangedName="dtEquipment_Request_TiresRowChanged" msprop:Generator_RowEvArgName="dtEquipment_Request_TiresRowChangeEvent" msprop:Generator_RowClassName="dtEquipment_Request_TiresRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnPropNameInTable="codeColumn" msprop:Generator_UserColumnName="code" type="xs:string" minOccurs="0" />
+              <xs:element name="determinant" msprop:Generator_ColumnVarNameInTable="columndeterminant" msprop:Generator_ColumnPropNameInRow="determinant" msprop:Generator_ColumnPropNameInTable="determinantColumn" msprop:Generator_UserColumnName="determinant" type="xs:string" minOccurs="0" />
+              <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:string" minOccurs="0" />
+              <xs:element name="percentage" msprop:Generator_ColumnVarNameInTable="columnpercentage" msprop:Generator_ColumnPropNameInRow="percentage" msprop:Generator_ColumnPropNameInTable="percentageColumn" msprop:Generator_UserColumnName="percentage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtUnserved_Request" msprop:Generator_TableClassName="dtUnserved_RequestDataTable" msprop:Generator_TableVarName="tabledtUnserved_Request" msprop:Generator_RowChangedName="dtUnserved_RequestRowChanged" msprop:Generator_TablePropName="dtUnserved_Request" msprop:Generator_RowDeletingName="dtUnserved_RequestRowDeleting" msprop:Generator_RowChangingName="dtUnserved_RequestRowChanging" msprop:Generator_RowEvHandlerName="dtUnserved_RequestRowChangeEventHandler" msprop:Generator_RowDeletedName="dtUnserved_RequestRowDeleted" msprop:Generator_RowClassName="dtUnserved_RequestRow" msprop:Generator_UserTableName="dtUnserved_Request" msprop:Generator_RowEvArgName="dtUnserved_RequestRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="rs_no" msprop:Generator_ColumnVarNameInTable="columnrs_no" msprop:Generator_ColumnPropNameInRow="rs_no" msprop:Generator_ColumnPropNameInTable="rs_noColumn" msprop:Generator_UserColumnName="rs_no" type="xs:string" minOccurs="0" />
+              <xs:element name="item_quantity" msprop:Generator_ColumnVarNameInTable="columnitem_quantity" msprop:Generator_ColumnPropNameInRow="item_quantity" msprop:Generator_ColumnPropNameInTable="item_quantityColumn" msprop:Generator_UserColumnName="item_quantity" type="xs:string" minOccurs="0" />
+              <xs:element name="requestor" msprop:Generator_ColumnVarNameInTable="columnrequestor" msprop:Generator_ColumnPropNameInRow="requestor" msprop:Generator_ColumnPropNameInTable="requestorColumn" msprop:Generator_UserColumnName="requestor" type="xs:string" minOccurs="0" />
+              <xs:element name="reason" msprop:Generator_ColumnVarNameInTable="columnreason" msprop:Generator_ColumnPropNameInRow="reason" msprop:Generator_ColumnPropNameInTable="reasonColumn" msprop:Generator_UserColumnName="reason" type="xs:string" minOccurs="0" />
+              <xs:element name="solution" msprop:Generator_ColumnVarNameInTable="columnsolution" msprop:Generator_ColumnPropNameInRow="solution" msprop:Generator_ColumnPropNameInTable="solutionColumn" msprop:Generator_UserColumnName="solution" type="xs:string" minOccurs="0" />
+              <xs:element name="desired_qty" msprop:Generator_ColumnVarNameInTable="columndesired_qty" msprop:Generator_ColumnPropNameInRow="desired_qty" msprop:Generator_ColumnPropNameInTable="desired_qtyColumn" msprop:Generator_UserColumnName="desired_qty" type="xs:string" minOccurs="0" />
+              <xs:element name="tor_sub_desc" msprop:Generator_ColumnVarNameInTable="columntor_sub_desc" msprop:Generator_ColumnPropNameInRow="tor_sub_desc" msprop:Generator_ColumnPropNameInTable="tor_sub_descColumn" msprop:Generator_UserColumnName="tor_sub_desc" type="xs:string" minOccurs="0" />
+              <xs:element name="project_desc" msprop:Generator_ColumnVarNameInTable="columnproject_desc" msprop:Generator_ColumnPropNameInRow="project_desc" msprop:Generator_ColumnPropNameInTable="project_descColumn" msprop:Generator_UserColumnName="project_desc" type="xs:string" minOccurs="0" />
+              <xs:element name="DATEDIFF" msprop:Generator_ColumnVarNameInTable="columnDATEDIFF" msprop:Generator_ColumnPropNameInRow="DATEDIFF" msprop:Generator_ColumnPropNameInTable="DATEDIFFColumn" msprop:Generator_UserColumnName="DATEDIFF" type="xs:string" minOccurs="0" />
+              <xs:element name="SUPPLIERS_NAME" msprop:Generator_ColumnVarNameInTable="columnSUPPLIERS_NAME" msprop:Generator_ColumnPropNameInRow="SUPPLIERS_NAME" msprop:Generator_ColumnPropNameInTable="SUPPLIERS_NAMEColumn" msprop:Generator_UserColumnName="SUPPLIERS_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

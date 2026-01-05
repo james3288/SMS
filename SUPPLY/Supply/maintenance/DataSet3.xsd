@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet3" targetNamespace="http://tempuri.org/DataSet3.xsd" xmlns:mstns="http://tempuri.org/DataSet3.xsd" xmlns="http://tempuri.org/DataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet3" msprop:Generator_UserDSName="DataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTP_proj_maintenance" msprop:Generator_TableClassName="DTP_proj_maintenanceDataTable" msprop:Generator_TableVarName="tableDTP_proj_maintenance" msprop:Generator_TablePropName="DTP_proj_maintenance" msprop:Generator_RowDeletingName="DTP_proj_maintenanceRowDeleting" msprop:Generator_RowChangingName="DTP_proj_maintenanceRowChanging" msprop:Generator_RowEvHandlerName="DTP_proj_maintenanceRowChangeEventHandler" msprop:Generator_RowDeletedName="DTP_proj_maintenanceRowDeleted" msprop:Generator_UserTableName="DTP_proj_maintenance" msprop:Generator_RowChangedName="DTP_proj_maintenanceRowChanged" msprop:Generator_RowEvArgName="DTP_proj_maintenanceRowChangeEvent" msprop:Generator_RowClassName="DTP_proj_maintenanceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="proj_code" msprop:Generator_ColumnVarNameInTable="columnproj_code" msprop:Generator_ColumnPropNameInRow="proj_code" msprop:Generator_ColumnPropNameInTable="proj_codeColumn" msprop:Generator_UserColumnName="proj_code" type="xs:string" minOccurs="0" />
+              <xs:element name="contract_amount" msprop:Generator_ColumnVarNameInTable="columncontract_amount" msprop:Generator_ColumnPropNameInRow="contract_amount" msprop:Generator_ColumnPropNameInTable="contract_amountColumn" msprop:Generator_UserColumnName="contract_amount" type="xs:string" minOccurs="0" />
+              <xs:element name="budgetary" msprop:Generator_ColumnVarNameInTable="columnbudgetary" msprop:Generator_ColumnPropNameInRow="budgetary" msprop:Generator_ColumnPropNameInTable="budgetaryColumn" msprop:Generator_UserColumnName="budgetary" type="xs:string" minOccurs="0" />
+              <xs:element name="actual_cost" msprop:Generator_ColumnVarNameInTable="columnactual_cost" msprop:Generator_ColumnPropNameInRow="actual_cost" msprop:Generator_ColumnPropNameInTable="actual_costColumn" msprop:Generator_UserColumnName="actual_cost" type="xs:string" minOccurs="0" />
+              <xs:element name="percentage_actual_expense" msprop:Generator_ColumnVarNameInTable="columnpercentage_actual_expense" msprop:Generator_ColumnPropNameInRow="percentage_actual_expense" msprop:Generator_ColumnPropNameInTable="percentage_actual_expenseColumn" msprop:Generator_UserColumnName="percentage_actual_expense" type="xs:string" minOccurs="0" />
+              <xs:element name="remarks" msprop:Generator_ColumnVarNameInTable="columnremarks" msprop:Generator_ColumnPropNameInRow="remarks" msprop:Generator_ColumnPropNameInTable="remarksColumn" msprop:Generator_UserColumnName="remarks" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
