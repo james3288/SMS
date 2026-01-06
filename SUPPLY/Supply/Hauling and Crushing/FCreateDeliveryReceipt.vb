@@ -2051,6 +2051,7 @@ Public Class FCreateDeliveryReceipt
                 .add("operator_id", operator_id)
                 .add("concession_ticket_no", row.concession)
                 .add("checkedBy", row.checkedBy)
+                .add("receivedBy", row.receivedBy)
                 .add("date_log", Date.Parse(Now))
                 .add("options", "W/ DR")
                 .add("remarks", row.remarks)

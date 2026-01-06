@@ -944,7 +944,7 @@ Public Class FDRLIST2
                 zoningPriceNew.initialize_aggregates_prices(cListOfAggregatesPrices)
 
                 a(43) = zoningPriceNew.execute(row.wh_id,
-                                           row.others_source,
+                                           row.quarry,
                                            row.requestor)
 #End Region
 
