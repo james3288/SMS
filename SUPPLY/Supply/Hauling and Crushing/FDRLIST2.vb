@@ -939,6 +939,7 @@ Public Class FDRLIST2
 
                 a(41) = sourceNew.execute(row.whArea_category, row.wh_area_id, row.quarry)
 #End Region
+
 #Region "ZONING PRICE"
                 'zoningPriceNew.initialize(row.rs_no, row.dr_no, row.inout)
                 zoningPriceNew.initialize_aggregates_prices(cListOfAggregatesPrices)
@@ -1319,7 +1320,13 @@ Public Class DR_SOURCE
                     If gItem.ToUpper().Contains("WASTE") Then
                         'for waste disposal transfer to other project
 
-                        Return ifNothingReplaceToDash(getSourceForWasteAggregates(gCategoryForProjectsite, gProjectSiteId))
+                        If category = "" And source_id = 0 And source <> "" Then 'this transaction is for waste disposal came from quarry
+                            Return source
+                        Else
+                            'Return ifNothingReplaceToDash(getSourceForWasteAggregates(gCategoryForProjectsite, gProjectSiteId))
+                            Return ifNothingReplaceToDash(getSourceForWasteAggregates(category, source_id))
+
+                        End If
                     Else
                         If category.ToUpper() = "OTHERS" Then
                             Return ifNothingReplaceToDash(getSourceForWasteAggregates(gCategoryForProjectsite, gProjectSiteId))
@@ -1750,7 +1757,9 @@ Public Class DR_ZONING_PRICE
         Dim zoningPrices As New List(Of PropsFields.PROPS_AGG_PRICES)
 
         'refactor zoning prices with details
-        For Each row In gListOfAggregatesPrices.Where(Function(x) x.wh_id = wh_id).ToList()
+        Dim listOfAggregatesPrices = gListOfAggregatesPrices.Where(Function(x) x.wh_id = wh_id).ToList()
+
+        For Each row In listOfAggregatesPrices
             Dim data As New PropsFields.PROPS_AGG_PRICES
             With data
                 .aggPricingId = row.aggPricingId
@@ -1782,14 +1791,10 @@ Public Class DR_ZONING_PRICE
             zoningPrices.Add(data)
         Next
 
-        getAggregatesZoningPrices = zoningPrices.FirstOrDefault(Function(x)
-                                                                    Dim zoningSource As String = IIf(x.zoning_source IsNot Nothing, x.zoning_source, "")
-                                                                    Dim zoningArea As String = IIf(x.zoning_area IsNot Nothing, x.zoning_area, "")
+        getAggregatesZoningPrices = getZoningPriceBySourceAndDestination(zoningPrices, source, destination)
 
-                                                                    Return zoningSource.ToUpper() = source.ToUpper() And
-                                                                    zoningArea.ToUpper() = destination.ToUpper()
-                                                                End Function)
 
+        Return getAggregatesZoningPrices
     End Function
 
 #Region "UTILITIES"
@@ -1802,6 +1807,19 @@ Public Class DR_ZONING_PRICE
         Catch ex As Exception
             gCustomMsg.ErrorMessage(ex)
         End Try
+    End Function
+
+    Private Function getZoningPriceBySourceAndDestination(zoningPrices As List(Of PropsFields.PROPS_AGG_PRICES),
+                                                          source As String,
+                                                          destination As String)
+
+        Return zoningPrices.FirstOrDefault(Function(x)
+                                               Dim zoningSource As String = IIf(x.zoning_source IsNot Nothing, x.zoning_source, "")
+                                               Dim zoningArea As String = IIf(x.zoning_area IsNot Nothing, x.zoning_area, "")
+
+                                               Return zoningSource.ToUpper() = source.ToUpper() And
+                                               zoningArea.ToUpper() = destination.ToUpper()
+                                           End Function)
     End Function
 #End Region
 End Class

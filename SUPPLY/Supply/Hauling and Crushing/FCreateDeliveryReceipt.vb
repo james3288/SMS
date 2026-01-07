@@ -434,15 +434,23 @@ Public Class FCreateDeliveryReceipt
 
                                 .requestor = requestorLabel(cStockpileIn.charges)
                                 .quarry = "-"
-                                .stockpile = sourceLabel(Results.rListOfAllCharges.FirstOrDefault(Function(x)
-                                                                                                      Return x.charges_category.ToUpper() = whItemDatas.whArea_category.ToUpper() And
-                                                                                          x.charges_id = whItemDatas.wh_area_id
-                                                                                                  End Function).charges)
+
+                                If whItemDatas.quarry_id > 0 Then 'this transaction is for waste disposal came from quarry
+                                    .quarry = quarryLabel(whItemDatas.quarry)
+                                Else
+                                    .stockpile = sourceLabel(Results.rListOfAllCharges.FirstOrDefault(Function(x)
+                                                                                                          Return x.charges_category.ToUpper() = whItemDatas.whArea_category.ToUpper() And
+                                                                                                            x.charges_id = whItemDatas.wh_area_id
+                                                                                                      End Function).charges)
+                                End If
+
+
                             End If
 
                         End With
 
                         _transactionStatus(transactionstatus)
+
                     End If
 
                     CheckBox1.Enabled = False
@@ -854,8 +862,13 @@ Public Class FCreateDeliveryReceipt
                                                              'zoning source
                                                              Dim newZoningSource As String = Utilities.ifNothingReplaceToBlank(x.zoning_source)
 
-                                                             Return x.zoning_area.ToUpper() = zoningArea.ToUpper() And
-                                                                                newZoningSource.ToUpper() = zoningSource.ToUpper()
+                                                             If zoningArea IsNot Nothing Then
+                                                                 Return x.zoning_area.ToUpper() = zoningArea.ToUpper() And
+                                                                              newZoningSource.ToUpper() = zoningSource.ToUpper()
+                                                             Else
+                                                                 Return Nothing
+                                                             End If
+
                                                          End If
 
                                                      End Function).ToList()
