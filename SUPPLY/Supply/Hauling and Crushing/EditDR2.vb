@@ -277,6 +277,18 @@
 
                     updateSelectedItemsInListView(rowindex, 8, txtSearch.Text, dr_item_id)
 
+                Case cDrSearchBy.DRNO
+                    Dim cv As New ColumnValuesObj
+
+                    cv.setCondition($"dr_items_id = {dr_item_id}")
+                    'cv.addJoinClause(defaultLeftJoin)
+
+                    cv.parameterToUpdate("dr_no", txtSearch.Text)
+
+                    cv.updateQuery("dbDeliveryReport_items", False)
+
+                    updateSelectedItemsInListView(rowindex, 1, txtSearch.Text, dr_item_id)
+
                 Case cDrSearchBy.DATE_SUBMITTED
                     Dim cv As New ColumnValuesObj
 

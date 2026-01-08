@@ -1147,6 +1147,14 @@ Public Class FDRLIST2
 
     End Function
 
+    Private Sub ConsessionTicketToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConsessionTicketToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub DRNOToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DRNOToolStripMenuItem.Click
+
+    End Sub
+
     Private Function getDetailedItems(row As PropsFields.dr_list_props_fields) As String
         Try
             Dim propNaming = getProperNaming(row.wh_pn_id)
