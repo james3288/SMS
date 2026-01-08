@@ -700,6 +700,12 @@
     <Compile Include="Supply\Hauling and Crushing\FRequestorList.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FSameDR.Designer.vb">
+      <DependentUpon>FSameDR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply\Hauling and Crushing\FSameDR.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Supply\Hauling and Crushing\FWHtoWH.Designer.vb">
       <DependentUpon>FWHtoWH.vb</DependentUpon>
     </Compile>
@@ -2334,6 +2340,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Supply\Hauling and Crushing\FRequestorList.resx">
       <DependentUpon>FRequestorList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply\Hauling and Crushing\FSameDR.resx">
+      <DependentUpon>FSameDR.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Supply\Hauling and Crushing\FSelectEqupiment.resx">
       <DependentUpon>FSelectEqupiment.vb</DependentUpon>

@@ -1884,24 +1884,8 @@ Public Class FCreateDeliveryReceipt
                 'check if drno already in database
 
 #Region "CHECK DRNO ALREADY IN DB"
-                Dim count As Integer
-                Dim t As Threading.Thread
-                t = New Threading.Thread(Sub()
-                                             For Each row In cListOfPendingDr
-                                                 Dim ifDrExist As Boolean = checkIfDrExistInDb(row.drNo)
-                                                 If ifDrExist Then
-                                                     If Not row.transaction = Transaction.rsNa_wsNa_dr Then
-                                                         cCustomMsg.message("error", $"this DRNO: {row.drNo} already exist in the database.", "SUPPLY INFO:")
-                                                         count += 1
-                                                     End If
-                                                 End If
-                                             Next
-                                         End Sub)
-                t.Start()
-
-                t.Join()
-
-                If count > 0 Then
+                Dim isDrAlreadyExist As Boolean = False 'isDrNoAlreadyExist()
+                If isDrAlreadyExist Then
                     Exit Sub
                 End If
 #End Region
@@ -2787,6 +2771,35 @@ Public Class FCreateDeliveryReceipt
             Else
                 Return 0
             End If
+
+        Catch ex As Exception
+            cCustomMsg.ErrorMessage(ex)
+        End Try
+    End Function
+
+    Private Function isDrNoAlreadyExist() As Boolean
+        Try
+            Dim count As Integer = 0
+            Dim t As Threading.Thread
+            t = New Threading.Thread(Sub()
+                                         For Each row In cListOfPendingDr
+                                             Dim ifDrExist As Boolean = checkIfDrExistInDb(row.drNo)
+                                             If ifDrExist Then
+                                                 If Not row.transaction = Transaction.rsNa_wsNa_dr Then
+                                                     cCustomMsg.message("error", $"this DRNO: {row.drNo} already exist in the database.", "SUPPLY INFO:")
+                                                     count += 1
+                                                 End If
+                                             End If
+                                         Next
+                                     End Sub)
+            t.Start()
+            t.Join()
+
+            If count > 0 Then
+                Return True
+            End If
+
+            Return False
 
         Catch ex As Exception
             cCustomMsg.ErrorMessage(ex)

@@ -1070,4 +1070,12 @@ Public Class PropsFields
         Public Property headerName As String
 
     End Class
+
+    Public Class DRTOREMOVE
+        Public Property dr_item_id As Integer
+        Public Property items As String
+        Public Property rs_no As String
+        Public Property dr_no As String
+
+    End Class
 End Class

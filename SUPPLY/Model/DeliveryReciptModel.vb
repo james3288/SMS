@@ -285,7 +285,12 @@ Public Class DeliveryReciptModel
                 Dim message As String = "this data is stockpile to stockpile transaction, if you remove this data, all related transaction will be also deleted! Do you want procceed?"
 
                 If customMsg.messageYesNo(message, "SUPPLY INFO:") Then
-                    deleteDeliveryReceipt = executeDeleteStockpileToStockpileDr(drData)
+                    With FSameDR
+                        .cDrToRemove = getDrDataByDrNo(drData.dr_no)
+                        .ShowDialog()
+                    End With
+
+                    'deleteDeliveryReceipt = executeDeleteStockpileToStockpileDr(drData)
                 End If
                 Exit Function
             End If
