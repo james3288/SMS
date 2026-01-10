@@ -282,14 +282,13 @@ Public Class DeliveryReciptModel
             Dim isStockpileToStockpile As Boolean = getDrDataByDrNo(drData.dr_no).Count > 1
 
             If isStockpileToStockpile Then
-                Dim message As String = "this data is stockpile to stockpile transaction, if you remove this data, all related transaction will be also deleted! Do you want procceed?"
+                Dim message As String = "This data is stockpile-to-stockpile or involves more than one record with the same DR No. transaction, Do you want to proceed?"
 
                 If customMsg.messageYesNo(message, "SUPPLY INFO:") Then
                     With FSameDR
                         .cDrToRemove = getDrDataByDrNo(drData.dr_no)
                         .ShowDialog()
                     End With
-
                     'deleteDeliveryReceipt = executeDeleteStockpileToStockpileDr(drData)
                 End If
                 Exit Function
@@ -403,7 +402,7 @@ Public Class DeliveryReciptModel
         End Try
     End Function
 
-    Private Function executeDeleteOthersOrInWithOrWithoutDrAndRs(drData As PropsFields.dr_list_props_fields,
+    Public Function executeDeleteOthersOrInWithOrWithoutDrAndRs(drData As PropsFields.dr_list_props_fields,
                                                isWithoutRs As Boolean) As Boolean
 
         Try
@@ -431,7 +430,7 @@ Public Class DeliveryReciptModel
             Return False
         End Try
     End Function
-    Private Function executeDeleteStockpileToStockpileDr(drData As PropsFields.dr_list_props_fields) As Boolean
+    Public Function executeDeleteStockpileToStockpileDr(drData As PropsFields.dr_list_props_fields) As Boolean
         Try
             Dim lot As New ListOfTables
 
@@ -464,6 +463,39 @@ Public Class DeliveryReciptModel
         End Try
     End Function
 
+    Public Function executeDeleteStockpileToStockpileDrNew(drData As PropsFields.dr_list_props_fields,
+                                                           drDataByDrNo As List(Of PropsFields.dr_list_props_fields)) As Boolean
+        Try
+            Dim lot As New ListOfTables
+
+            For Each row In drDataByDrNo
+                If row.inout = cInOut._OUT Then
+
+                    lot.addTable("dbDeliveryReport_items", $"dr_items_id = {row.dr_item_id}")
+                    lot.addTable("dbDeliveryReport_info", $"dr_info_id = {row.dr_info_id}")
+
+                ElseIf row.inout = cInOut._IN Then
+                    Dim rrItemId As Integer = getRrItemId(row)
+                    Dim rrInfoId As Integer = getRrInfoId(rrItemId)
+
+                    lot.addTable("dbreceiving_item_partially", $"par_rr_item_id = {row.par_rr_item_id}")
+                    lot.addTable("dbreceiving_items", $"rr_item_id = {rrItemId}")
+                    lot.addTable("dbreceiving_info", $"rr_info_id = {rrInfoId}")
+                    lot.addTable("dbDeliveryReport_items", $"dr_items_id = {row.dr_item_id}")
+                    lot.addTable("dbDeliveryReport_info", $"dr_info_id = {row.dr_info_id}")
+                End If
+            Next
+
+            Dim cc As New ColumnValuesObj
+            cc.deleteDataUsingRollback(lot.getListOfTables)
+
+            Return True
+
+        Catch ex As Exception
+            customMsg.ErrorMessage(ex)
+            Return False
+        End Try
+    End Function
 
     Private Function executeDeleteDrDataInWithoutRs(drData As PropsFields.dr_list_props_fields,
                                                isWithoutRs As Boolean) As Boolean

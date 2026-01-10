@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 Imports System.Globalization
 
 Module MyFunctions
-
+    Private customMsg As New customMessageBox
     Public Function find_item_from_datagridview(ByVal datagrid As DataGridView, ByVal index As Integer, ByVal value As String)
         Dim i As Integer = 0
         For Each Row As DataGridViewRow In datagrid.Rows
@@ -852,6 +852,23 @@ Module MyFunctions
         For i As Integer = 0 To datagrid.SelectedCells.Count - 1
             func_get_datagrid_rowindex = datagrid.SelectedCells.Item(i).RowIndex
         Next
+    End Function
+
+    Public Function func_get_listview_rowindex(ByVal lv As ListView, Optional id As Integer = 0) As Integer
+
+        Try
+            For Each row As ListViewItem In lv.Items
+                If row.Text = id Then
+                    func_get_listview_rowindex = row.Index
+                    Exit For
+                End If
+            Next
+
+            Return func_get_listview_rowindex
+        Catch ex As Exception
+            customMsg.ErrorMessage(ex)
+        End Try
+
     End Function
 
     Public Function select_atleast_one(datagrid As DataGridView) As Integer
