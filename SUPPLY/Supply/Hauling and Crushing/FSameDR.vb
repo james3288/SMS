@@ -82,6 +82,8 @@ Public Class FSameDR
                     remove.execute()
                 End If
             Next
+
+            Me.Dispose()
         Catch ex As Exception
             customMsg.ErrorMessage(ex)
         End Try
@@ -125,7 +127,8 @@ Public Class FSameDR
                         End If
 
                     Case cInOut._IN
-                        MsgBox("delete in transaction is coming soon...")
+
+                        removeInDrTransaction()
                 End Select
             Catch ex As Exception
                 _cCustomMsg.ErrorMessage(ex)
@@ -170,6 +173,27 @@ Public Class FSameDR
                     Next
                 Else
                     _cCustomMsg.message("error", "there is something wrong in deleting data or you must select the OUT transaction...", "SMS INFO:")
+                End If
+            Catch ex As Exception
+                _cCustomMsg.ErrorMessage(ex)
+            End Try
+        End Sub
+
+        Private Sub removeInDrTransaction()
+            Try
+                Dim drModel As New DeliveryReciptModel
+                Dim result As Boolean
+                Dim drListData = FDRLIST2.lvl_drList
+
+                If Not _data.rs_no.ToUpper() = cNotApplicable Then
+                    result = drModel.executeDeleteOthersOrInWithOrWithoutDrAndRs(_data, False)
+                End If
+
+                If result Then
+                    Dim index As Integer = func_get_listview_rowindex(drListData, _data.dr_item_id)
+                    drListData.Items.RemoveAt(index)
+                Else
+                    _cCustomMsg.message("error", "there is something wrong in deleting data...", "SMS INFO:")
                 End If
             Catch ex As Exception
                 _cCustomMsg.ErrorMessage(ex)

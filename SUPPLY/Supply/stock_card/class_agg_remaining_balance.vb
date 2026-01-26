@@ -202,8 +202,12 @@ Public Class class_agg_remaining_balance
                             .supp_recipient = newDR.Item("agg_supplier").ToString
 
                             '-----------------------------------------
-                        Else
 
+                        ElseIf newDR.Item("type_of_purchasing").ToString = "DR" And
+                            Not newDR.Item("rs_no").ToString.ToUpper() = cNotApplicable Then
+
+                            .supp_recipient = newDR.Item("r2").ToString
+                        Else
                             .supp_recipient = newDR.Item("SOURCE_WH").ToString
                         End If
 
