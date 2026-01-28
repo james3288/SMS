@@ -350,6 +350,40 @@
                                                       FDRLIST2.col_qty_in_others.Index),
                                                   txtSearch.Text,
                                                   dr_item_id)
+
+                Case cDrSearchBy.PLATE_NO
+
+                    Dim equipments = cListOfChargesInfo.FirstOrDefault(Function(x)
+                                                                           Return x.category = "EQUIPMENT" And
+                                                                           x.charges_desc.ToUpper() = txtSearch.Text.ToUpper()
+                                                                       End Function)
+
+                    If equipments IsNot Nothing Then
+                        Dim cv As New ColumnValuesObj
+
+                        cv.setCondition($"dr_items_id = {dr_item_id}")
+                        cv.addJoinClause(defaultLeftJoin)
+
+                        If equipments.charges_id = 0 Then
+                            If customMsg.messageYesNo("plateNo was not found in the database," & vbCrLf & "if you want to continue, kindly click yes to save outsource plate No!", "SUPPLY INFO") Then
+                                cv.parameterToUpdate("plate_no_outsource", txtSearch.Text)
+                                cv.parameterToUpdate("equipListID", 0)
+                            Else
+                                Exit Sub
+                            End If
+                        Else
+                            cv.parameterToUpdate("equipListID", equipments.charges_id)
+                        End If
+
+                        cv.updateQuery(firstTable, True)
+
+                        updateSelectedItemsInListView(rowindex, 24, txtSearch.Text, dr_item_id)
+                    End If
+                    'If selected.Count > 0 Then
+                    '    operator_id = selected(0)
+                    'End If
+
+
             End Select
 
 

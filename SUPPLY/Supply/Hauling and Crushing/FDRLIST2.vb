@@ -755,7 +755,7 @@ Public Class FDRLIST2
                 .wh_id = row.wh_id
                 .wh_pn_id = row.wh_pn_id
                 .rs_no_orig = row.rs_no
-                '.quarry = row.quarry
+                .quarry = row.quarry
             End With
 
             cListOfDrListItems.Add(_ws)
@@ -842,13 +842,16 @@ Public Class FDRLIST2
 #End Region
 #Region "QUARRY"
                 'quarryNew.initialize(row.rs_no, row.dr_no, row.inout)
+                quarryNew.initialize_drOption(row.dr_option)
                 a(39) = quarryNew.execute(,, row.quarry)
 #End Region
 #Region "SOURCE"
                 'sourceNew.initialize(row.rs_no, row.dr_no, row.inout)
+                sourceNew.initialize_drOption(row.dr_option)
                 a(41) = sourceNew.execute(row.whArea_category,
                                           row.wh_area_id,
-                                          row.source)
+                                          row.source,
+                                          row.quarry)
 #End Region
 #Region "REQUESTOR"
                 'requestorNew.initialize(row.rs_no, row.dr_no, row.inout)
@@ -1275,6 +1278,7 @@ Public Class DR_SOURCE
     Private gCategoryForProjectsite As String
     Private gProjectSiteId As Integer
     Private gWhOption As String
+    Private gDrOption As String
 
     Public Sub initialize(rsNo As String, drNo As String, inOut As String, Optional typeOfPurchasing As String = "")
         gRsNo = rsNo
@@ -1285,6 +1289,10 @@ Public Class DR_SOURCE
 
     Public Sub initialize_item(item As String)
         gItem = item
+    End Sub
+
+    Public Sub initialize_drOption(drOption As String)
+        gDrOption = drOption
     End Sub
 
     Public Sub initialize_category_for_projectsite(category As String, projectSiteId As Integer)
@@ -1298,7 +1306,8 @@ Public Class DR_SOURCE
 
     Public Function execute(Optional category As String = "",
                             Optional source_id As Integer = 0,
-                            Optional source As String = "") As String
+                            Optional source As String = "",
+                            Optional quarry As String = "") As String
         Try
             If gInOut = cInOut._IN Then
 
@@ -1319,6 +1328,10 @@ Public Class DR_SOURCE
                         Return newSourceArea.charges
                     Else
                         Return source
+                    End If
+                Else
+                    If gDrOption = cDrCategory.WITHOUT_DR Then
+                        Return quarry
                     End If
                 End If
 
@@ -1557,6 +1570,16 @@ Public Class DR_QUARRY
         gTypeOfPurchasing = typeOfPurchasing
     End Sub
 
+    Public Sub initialize_drOption(drOption As String)
+        gDrOption = drOption
+    End Sub
+
+    Private Function isWithoutDr() As Boolean
+        If gDrOption = cDrCategory.WITHOUT_DR Then
+            Return True
+        End If
+    End Function
+
     Public Function execute(Optional category As String = "",
                             Optional quarry_id As Integer = 0,
                             Optional quarry As String = "",
@@ -1572,7 +1595,10 @@ Public Class DR_QUARRY
 
             ElseIf gInOut = cInOut._OUT Then
                 If Not isDrWithoutRs(gRsNo) Then
-                    Return quarry
+                    If Not isWithoutDr() Then
+                        Return quarry
+                    End If
+
                 End If
 
             ElseIf gInOut = cInOut._OTHERS Then
